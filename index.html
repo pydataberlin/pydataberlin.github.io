@@ -29,6 +29,19 @@ $(function() {
 
 $(document).ready(function(){
     topResize();
+	if(window.innerWidth < 1025){
+		$('.fixed').css('margin-left', 0);
+		$('.mainBanner').removeClass('fixed');
+		$('#banner').css('margin-top', 0);
+		$('#background').hide();
+		$('#banner').hide();
+	}else{
+		$('.mainBanner').addClass('fixed');
+		$('.fixed').css('margin-left', -$('.fixed').width()/2);
+		$('#banner').css('margin-top', $('.fixed').height());
+		$('#background').show();
+		$('#banner').show();
+	}
 });	
 
 $(window).resize(function(){
