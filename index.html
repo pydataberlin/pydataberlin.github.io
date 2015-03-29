@@ -8,31 +8,108 @@
 <link rel="shortcut icon" href="/static/img/favicon.ico">
 <!--<script src="/static/berlin2015/bower_components/modernizr/modernizr.js"></script>-->
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
+<script src="//code.jquery.com/jquery-latest.min.js"></script>
+<script src="//unslider.com/unslider.min.js"></script>
 <script>
 $(function() {
         $('a[href*=#]:not([href=#])').click(function() {
             if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-            if (target.length) {
-            $('html,body').animate({
-scrollTop: target.offset().top
-}, 1000);
-            return false;
-            }
-            }
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					if (target.length) {
+						scrollPosition = target.offset().top - $('.fixed').height();
+						$('html,body').animate({
+							scrollTop: scrollPosition
+						}, 1000);
+						return false;
+					}
+	            }
             });
         });
+
+$(document).ready(function(){
+    topResize();
+});	
+
+$(window).resize(function(){
+	topResize();
+	if(window.innerWidth < 1025){
+		$('.fixed').css('margin-left', 0);
+		$('.mainBanner').removeClass('fixed');
+		$('#banner').css('margin-top', 0);
+		$('#background').hide();
+		$('#banner').hide();
+	}else{
+		$('.mainBanner').addClass('fixed');
+		$('.fixed').css('margin-left', -$('.fixed').width()/2);
+		$('#banner').css('margin-top', $('.fixed').height());
+		$('#background').show();
+		$('#banner').show();
+	}
+});
+
+function topResize(){
+	$('.fixed').css('margin-left', -$('.fixed').width()/2);
+	$('#banner').css('margin-top', $('.fixed').height());
+	$('#background').css('height', $('.fixed').height());
+};
+
+$(function() {
+    $('.banner').unslider({
+	speed: 1000,               //  The speed to animate each slide (in milliseconds)
+	delay: 5000,              //  The delay between slide animations (in milliseconds)
+	complete: function() {},  //  A function that gets called after every slide animation
+	keys: true,               //  Enable keyboard (left, right) arrow shortcuts
+	dots: true,               //  Display dot navigation
+	fluid: true              //  Support responsive design. May break non-responsive designs
+});
+});
+
 </script>
+<style>
+.fixed{
+	position:fixed;
+	left:50%;
+	z-index:150;
+}#background{
+	position:fixed;
+	left:0;
+	width:100%;
+	background:url(/static/img/trDot.png) repeat;
+}.button-group li:first-of-type a{
+	border-bottom-left-radius:3px;
+}.button-group li:last-of-type a{
+	border-bottom-right-radius:3px;
+}#banner{
+	padding:1em 0 !important;
+}.banner{
+	position:relative; 
+	overflow:auto;
+	background:url(/static/img/berlin-bg_cut.jpg) center;
+	background-size:cover;
+	border-radius:3px;
+}.banner li{
+	list-style:none;
+	height:495px;
+	text-align:left;
+}.banner ul li{
+	float:left;
+	margin-top:120px;
+	font-size:60px;
+	color:#f9f9f9;
+	text-shadow:1px 1px 0px #000;
+}.banner a{
+    color:#f9f9f9;
+}
+</style>
 </head>
 <body>
 
-
-<div class="row">
+<a name="top"></a>
+<div class="row fixed mainBanner">
+<div id="background"></div>
     <div class="large-3 columns">
-        <a name="top"><h1><img src="/static/img/PyDataBerlin-2015.png"></h1></a>
+        <h1><img src="/static/img/PyDataBerlin-2015.png"></h1>
     </div>
 
     <div class="large-9 columns">
@@ -50,8 +127,12 @@ scrollTop: target.offset().top
 
 <div class="full-width" id="banner">
     <div class="row">
-        <div class="large-12 columns">
-            <img src="/static/img/berlin-bg_cut.jpg">
+        <div class="banner">
+            <ul>
+                <li>Learn about Python Tools and <br>Algorithms for Data Science</li>
+                <li><a href="https://www.eventbrite.com/e/pydata-berlin-2015-tickets-16284071095">Early Bird<br>Registration is Open</a></li>
+                <li><a href="#cfp">CFP: We Welcome<br>Your Contribution</a></li>
+            </ul>
         </div>
     </div>
 </div>
