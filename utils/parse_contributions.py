@@ -17,7 +17,7 @@ def retrieve(doc_id, out):
     fields    = ['name', 'title', 'id', 'track', 'date', 'time', 'bio', 'abstract', 'linkedin', 'twitter']
     selection = map(lambda entry: get_row(fields, entry), raw['feed']['entry'])
 
-    with open('../static/' + out + '.json', 'w') as outfile:
+    with open('../_data/' + out + '.json', 'w') as outfile:
             json.dump(selection, outfile)
 
 
