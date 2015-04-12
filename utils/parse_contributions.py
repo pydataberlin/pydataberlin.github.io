@@ -2,14 +2,10 @@ import urllib2
 import json
 
 def get_field(key, entry):
-    value = entry['gsx$'+key]['$t']
-    return {key:value}
+    return entry['gsx$'+key]['$t']
 
 def get_row(fields, entry):
-    row = []
-    for f in fields:
-        row.append(get_field(f, entry))
-    return row
+    return {f:get_field(f,entry) for f in fields}
 
 def retrieve(doc_id, out):
     url       = "https://spreadsheets.google.com/feeds/list/" + doc_id + "/1/public/values?alt=json"
@@ -17,6 +13,7 @@ def retrieve(doc_id, out):
     fields    = ['name', 'title', 'id', 'track', 'date', 'time', 'bio', 'abstract', 'linkedin', 'twitter']
     selection = map(lambda entry: get_row(fields, entry), raw['feed']['entry'])
 
+    print selection
     with open('../_data/' + out + '.json', 'w') as outfile:
             json.dump(selection, outfile)
 
