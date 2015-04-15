@@ -1,5 +1,6 @@
 import urllib2
 import json
+import os
 
 def get_field(key, entry):
     return entry['gsx$'+key]['$t']
@@ -14,7 +15,9 @@ def retrieve(doc_id, out):
     selection = map(lambda entry: get_row(fields, entry), raw['feed']['entry'])
 
     print selection
-    with open('../_data/' + out + '.json', 'w') as outfile:
+
+    out_path = os.path.dirname(os.path.realpath(__file__)) + '/../_data/' + out + '.json'
+    with open(out_path, 'w') as outfile:
             json.dump(selection, outfile)
 
 
