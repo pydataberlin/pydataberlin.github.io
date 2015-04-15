@@ -11,7 +11,7 @@ def get_row(fields, entry):
 def retrieve(doc_id, out):
     url       = "https://spreadsheets.google.com/feeds/list/" + doc_id + "/1/public/values?alt=json"
     raw       = json.loads(urllib2.urlopen(url).read())
-    fields    = ['name', 'title', 'id', 'track', 'date', 'time', 'bio', 'abstract', 'linkedin', 'twitter', 'organisation']
+    fields    = ['name', 'firstname', 'title', 'type', 'id', 'track', 'date', 'time', 'bio', 'abstract', 'linkedin', 'twitter', 'organisation']
     selection = map(lambda entry: get_row(fields, entry), raw['feed']['entry'])
 
     print selection
