@@ -4,54 +4,21 @@ title: PyData Berlin 2015 | May 29-30
 ---
 <div class="row" id="content" style="margin-top: 115px">
   <div class="large-10 columns">
-    <a name="keynotes"><h1>Keynote Speakers</h1></a>
+    <a name="keynotes"><h1>Keynotes</h1></a>
     
     <div class="speaker-container">
-      {% for speaker in site.data.keynotes | where:"type","keynote" %}
-        <div class="speaker">
-          <div class="speaker-thumb">
-            <img src="static/assets/speaker/{{ speaker.name | slugify }}.jpg" alt="{{ speaker.name }}">
-          </div>
-          <div class="speaker-content">
-            <h3>{{ speaker.name }}</h3>
-            <div class="small">{{ speaker.organisation }}</div>
-            
-            <strong>{{ speaker.title }}</strong>
-            
-            <br>
-            <a href="#" class="speaker__toggle speaker__toggle--abstract">Abstract</a>
-            |
-            <a href="#" class="speaker__toggle speaker__toggle--bio">Bio</a>
-            
-            {% if speaker.abstract != '' %}
-              <div class="speaker__abstract">
-                
-                <div class="speaker__abstract__text">
-                  {{ speaker.abstract }}
-                </div>
-              </div>
-            {% endif %}
-            
-            <div class="speaker__bio">
-              
-              <div class="speaker__bio__text">
-                {{ speaker.bio }}
-              </div>
-            </div>
-            <div class="speaker__social">
-              {% if speaker.linkedin != '' %}
-                <a href="{{speaker.linkedin}}" target="_blank" class="speaker__social__item speaker__social__item--linkedin">
-                  <img src="static/assets/social/linkedin_logo.png">
-                </a>
-              {% endif %}
-              {% if speaker.twitter != '' %}
-                <a href="https://twitter.com/{{speaker.twitter}}" target="_blank" class="speaker__social__item speaker__social__item--twitter">
-                  <img src="static/assets/social/twitter_logo.png">
-                </a>
-              {% endif %}
-            </div>
-          </div>
-        </div>
+      {% assign collection = site.data.keynotes | where:"type","keynote" | sort: "name", "first" %}
+      {% for speaker in collection %}
+        {% include speaker.html speaker=speaker %}
+      {% endfor %}
+    </div>
+    
+    <a name="keynotes"><h1>Speakers</h1></a>
+    
+    <div class="speaker-container">
+      {% assign collection = site.data.keynotes | where:"type","talk" | sort: "name", "first" %}
+      {% for speaker in collection %}
+        {% include speaker.html speaker=speaker %}
       {% endfor %}
     </div>
   </div>
