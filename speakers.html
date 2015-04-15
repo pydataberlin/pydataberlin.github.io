@@ -2,36 +2,58 @@
 layout: page
 title: PyData Berlin 2015 | May 29-30
 ---
-<div class="row" id="content">
-    <div class="large-10 columns">
-        <a name="keynotes"><h1>Keynote Speakers</h1></a>
-
-        <div class="speaker-container">
-            <p>
-            <div class="speaker-thumb">
-                <img src="static/img/speakers/matthew_rocklin.jpg" alt="Matthew Rocklin">
+<div class="row" id="content" style="margin-top: 115px">
+  <div class="large-10 columns">
+    <a name="keynotes"><h1>Keynote Speakers</h1></a>
+    
+    <div class="speaker-container">
+      {% for speaker in site.data.keynotes | where:"type","keynote" %}
+        <div class="speaker">
+          <div class="speaker-thumb">
+            <img src="static/assets/speaker/{{ speaker.name | slugify }}.jpg" alt="{{ speaker.name }}">
+          </div>
+          <div class="speaker-content">
+            <h3>{{ speaker.name }}</h3>
+            <div class="small">{{ speaker.organisation }}</div>
+            
+            <strong>{{ speaker.title }}</strong>
+            
+            <br>
+            <a href="#" class="speaker__toggle speaker__toggle--abstract">Abstract</a>
+            |
+            <a href="#" class="speaker__toggle speaker__toggle--bio">Bio</a>
+            
+            {% if speaker.abstract != '' %}
+              <div class="speaker__abstract">
+                
+                <div class="speaker__abstract__text">
+                  {{ speaker.abstract }}
+                </div>
+              </div>
+            {% endif %}
+            
+            <div class="speaker__bio">
+              
+              <div class="speaker__bio__text">
+                {{ speaker.bio }}
+              </div>
             </div>
-            <div class="speaker-content">
-                <h3>Matthew Rocklin</h3>
-                <h4>Continuum Analytics</h4>
-                <p>Matthew Rocklin likes numerics, mathematics, and programming paradigms. He contributes to a variety of open source projects and endeavors to demonstrate the value of abstract solutions to concrete problems. A graduate of UC Berkeley (Physics, Math) and of the University of Chicago (PhD in CS). Matthew is currently a Computational Scientist at Continuum Analytics.</p>
+            <div class="speaker__social">
+              {% if speaker.linkedin != '' %}
+                <a href="{{speaker.linkedin}}" target="_blank" class="speaker__social__item speaker__social__item--linkedin">
+                  <img src="static/assets/social/linkedin_logo.png">
+                </a>
+              {% endif %}
+              {% if speaker.twitter != '' %}
+                <a href="https://twitter.com/{{speaker.twitter}}" target="_blank" class="speaker__social__item speaker__social__item--twitter">
+                  <img src="static/assets/social/twitter_logo.png">
+                </a>
+              {% endif %}
             </div>
-            </p>
-
-            <p>
-            <div class="speaker-thumb">
-                <img src="static/img/speakers/felix_wick.jpg" alt="Matthew Rocklin">
-            </div>
-            <div class="speaker-content">
-                <h3>Felix Wick</h3>
-                <h4>Blue Yonder</h4>
-                <p>Felix Wick leads the machine learning and core development team at Blue Yonder, a SaaS provider for predictive applications. He obtained his diploma (2008) and PhD (2011) in physics at the Karlsruhe Institute of Technology (KIT). The topic of his research was experimental particle physics with a focus on statistical data analysis. In 2011, he joined Blue Yonder as Data Scientist, building predictive analytics solutions for various customer projects. He now focuses on the development of machine learning and data science algorithms primarily based on Python.</p>
-            </div>
-
-            </p>
-
+          </div>
         </div>
+      {% endfor %}
     </div>
-
-{% include sponsors.html %}
+  </div>
+  {% include sponsors.html %}
 </div>
