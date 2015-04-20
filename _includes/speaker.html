@@ -15,21 +15,6 @@
     |
     <a href="#" class="speaker__toggle speaker__toggle--bio">Bio</a>
     
-    {% if speaker.abstract != '' %}
-      <div class="speaker__abstract">
-        
-        <div class="speaker__abstract__text">
-          {{ speaker.abstract }}
-        </div>
-      </div>
-    {% endif %}
-    
-    <div class="speaker__bio">
-      
-      <div class="speaker__bio__text">
-        {{ speaker.bio }}
-      </div>
-    </div>
     <div class="speaker__social">
       {% if speaker.linkedin != '' %}
         <a href="{{speaker.linkedin}}" target="_blank" class="speaker__social__item speaker__social__item--linkedin">
@@ -42,5 +27,21 @@
         </a>
       {% endif %}
     </div>
+
+    {% if speaker.abstract != '' %}
+      <div class="speaker__abstract">
+        
+        <div class="speaker__abstract__text">
+          {{ speaker.abstract }}
+        </div>
+      </div>
+    {% endif %}
+    
+    <div class="speaker__bio">
+      <div class="speaker__bio__text">
+        {{ speaker.bio }}
+      </div>
+    </div>
+
   </div>
 </div>
