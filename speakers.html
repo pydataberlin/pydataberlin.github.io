@@ -1,240 +1,26 @@
-<!doctype html>
-<html class="no-js" lang="en">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>PyData Berlin 2015 | May 29-30</title>
-<meta name="Description" content="PyData is the home for all things related to the use of Python in data management and analysis. It brings together Python enthusiasts at a novice level and includes Tutorials and corresponding talks as well as advanced talks by experts and package developers. The conference not only focuses on the application of data science tools but also on underlying algorithms and patterns. After a very successful PyData Berlin 2014 hosted at the BCC we are thrilled to announce PyData Berlin 2015, this time taking place at Betahaus Berlin.">
-<meta name="Keywords" content="Speakers PyData Berlin 2015 Python Big Data Analytics Spark PySpark Pandas NumFocus Conda NumPy SciPy conference MeetUp">
-<link rel="stylesheet" href="static/stylesheets/app.css" />
-<link rel="shortcut icon" href="static/img/favicon.ico">
-<!--<script src="static/berlin2015/bower_components/modernizr/modernizr.js"></script>-->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="//code.jquery.com/jquery-latest.min.js"></script>
-<script src="//unslider.com/unslider.min.js"></script>
-<script>
-$(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-            if (target.length) {
-            scrollPosition = target.offset().top - $('.fixed').height();
-            $('html,body').animate({
-scrollTop: scrollPosition
-}, 1000);
-            return false;
-            }
-            }
-            });
-        });
-
-$(document).ready(function(){
-        $('.fixed').css('margin-left', -$('.fixed').width()/2);
-        $('#banner').css('margin-top', $('.fixed').height());
-
-        topResize();
-
-
-        if(window.innerWidth < 1025){
-        $('.fixed').css('margin-left', 0);
-        $('.mainBanner').removeClass('fixed');
-        $('#banner').css('margin-top', 0);
-        $('#background').hide();
-        $('#banner').hide();
-        };
-
-        });
-
-$(window).resize(function(){
-        topResize();
-        if(window.innerWidth < 1025){
-        $('.fixed').css('margin-left', 0);
-        $('.mainBanner').removeClass('fixed');
-        $('#banner').css('margin-top', 0);
-        $('#background').hide();
-        $('#banner').hide();
-        }; if(window.innerWidth > 1025){
-        $('.mainBanner').addClass('fixed');
-        $('.fixed').css('margin-left', -$('.fixed').width()/2);
-        $('#banner').css('margin-top', $('.fixed').height());
-        $('#background').show();
-        $('#banner').show();
-        }
-        });
-
-function topResize(){
-    $('.fixed').css('margin-left', -$('.fixed').width()/2);
-    $('#banner').css('margin-top', $('.fixed').height());
-    $('#content').css('margin-top', $('.fixed').height());
-    $('#background').css('height', $('.fixed').height());
-};
-
-$(function() {
-        $('.banner').unslider({
-speed: 1000,               //  The speed to animate each slide (in milliseconds)
-delay: 5000,              //  The delay between slide animations (in milliseconds)
-complete: function() {},  //  A function that gets called after every slide animation
-keys: true,               //  Enable keyboard (left, right) arrow shortcuts
-dots: true,               //  Display dot navigation
-fluid: true              //  Support responsive design. May break non-responsive designs
-});
-        });
-
-</script>
-<style>
-.fixed{
-    position:fixed;
-    left:50%;
-    z-index:150;
-}#background{
-    position:fixed;
-    height:115px;
-    left:0;
-    width:100%;
-    background:url(static/img/trDot.png) repeat;
-}.button-group li:first-of-type a{
-    border-bottom-left-radius:3px;
-}.button-group li:last-of-type a{
-    border-bottom-right-radius:3px;
-}#banner{
-    padding:1em 0 !important;
-}.banner{
-    position:relative; 
-    overflow:auto;
-    background:url(static/img/berlin-bg_cut.jpg) center;
-    background-size:cover;
-    border-radius:3px;
-}.banner li{
-    list-style:none;
-    height:495px;
-    text-align:left;
-}.banner ul li{
-    float:left;
-    margin-top:120px;
-    font-size:60px;
-    color:#f9f9f9;
-    text-shadow:1px 1px 0px #000;
-}.banner a{
-    color:#f9f9f9;
-}
-</style>
-
-<style>
-.speaker-container{
-    vertical-align: middle;
-    margin: 30px 20px 0 0;
-    left:0;
-    right:0;
-}.speaker-thumb img {
-    vertical-align:middle;
-    border-radius:3px;
-    float:left;
-    width:160px;
-    margin-left:15px;
-    margin-top:10px;
-}.speaker-content {
-    margin-left: 200px;
-    left:0;
-    right:0;
-}
-</style>
-
-<!--<style>-->
-<!--.speaker-thumb img {-->
-    <!--width:160px;-->
-    <!--vertical-align:middle;-->
-    <!--border-radius:3px;-->
-    <!--float:left;-->
-<!--}-->
-<!--</style>-->
-
-
-
-</head>
-<body>
-
-<a name="top"></a>
-<!--<div id="background"></div>-->
-<div class="row fixed mainBanner">
-    <div id="background"></div>
-    <div class="large-3 columns">
-        <a href="index.html#top"><img src="static/img/PyDataBerlin-2015.png"></a>
-        <!--<h1><img src="static/img/PyDataBerlin-2015.png"></h1>-->
+---
+layout: page
+title: PyData Berlin 2015 | May 29-30
+---
+<div class="row" id="content" style="margin-top: 115px">
+  <div class="large-10 columns">
+    <a name="keynotes"><h1>Keynotes</h1></a>
+    
+    <div class="speaker-container">
+      {% assign collection = site.data.keynotes | where:"type","keynote" | sort: "name", "first" %}
+      {% for speaker in collection %}
+        {% include speaker.html speaker=speaker %}
+      {% endfor %}
     </div>
-
-    <div class="large-9 columns">
-        <ul class="button-group right">
-            <li><a href="https://www.eventbrite.com/e/pydata-berlin-2015-tickets-16284071095" class="button">Register</a></li>
-            <li><a href="index.html#cfp" class="button">CFP</a></li>
-            <li><a href="index.html#venue" class="button">Venue</a></li>
-            <li><a href="index.html#news" class="button">News</a></li>
-            <li><a href="#" class="button">Speakers</a></li>
-            <li><a href="schedule.html" class="button">Schedule</a></li>
-        </ul>
-    </div>
+    
+    <!--<a name="keynotes"><h1>Speakers</h1></a>-->
+    
+    <!--<div class="speaker-container">-->
+      <!--{% assign collection = site.data.keynotes | where:"type","talk" | sort: "name", "first" %}-->
+      <!--{% for speaker in collection %}-->
+        <!--{% include speaker.html speaker=speaker %}-->
+      <!--{% endfor %}-->
+    <!--</div>-->
+  </div>
+  {% include sponsors.html %}
 </div>
-
-
-<div class="row" id="content">
-    <div class="large-10 columns">
-        <a name="keynotes"><h1>Keynote Speakers</h1></a>
-
-        <div class="speaker-container">
-            <p>
-            <div class="speaker-thumb">
-                <img src="static/img/speakers/matthew_rocklin.jpg" alt="Matthew Rocklin">
-            </div>
-            <div class="speaker-content">
-                <h3>Matthew Rocklin</h3>
-                <h4>Continuum Analytics</h4>
-                <p>Matthew Rocklin likes numerics, mathematics, and programming paradigms. He contributes to a variety of open source projects and endeavors to demonstrate the value of abstract solutions to concrete problems. A graduate of UC Berkeley (Physics, Math) and of the University of Chicago (PhD in CS). Matthew is currently a Computational Scientist at Continuum Analytics.</p>
-            </div>
-            </p>
-
-            <p>
-            <div class="speaker-thumb">
-                <img src="static/img/speakers/felix_wick.jpg" alt="Matthew Rocklin">
-            </div>
-            <div class="speaker-content">
-                <h3>Felix Wick</h3>
-                <h4>Blue Yonder</h4>
-                <p>Felix Wick leads the machine learning and core development team at Blue Yonder, a SaaS provider for predictive applications. He obtained his diploma (2008) and PhD (2011) in physics at the Karlsruhe Institute of Technology (KIT). The topic of his research was experimental particle physics with a focus on statistical data analysis. In 2011, he joined Blue Yonder as Data Scientist, building predictive analytics solutions for various customer projects. He now focuses on the development of machine learning and data science algorithms primarily based on Python.</p>
-            </div>
-
-            </p>
-
-        </div>
-    </div>
-
-
-    <div class="large-2 columns">
-        <h4 class="text-center">Sponsors</h4>
-        <hr>
-
-        <h5 class="text-center">Silver</h5>
-        <a href="http://www.blue-yonder.com/"><img src="static/img/blue_yonder_logo.jpg" alt="Blue Yonder Logo"></a>
-        <h5 class="text-center">Supporting</h5>
-        <a href="http://www.python-academy.com/"><img src="static/img/python_academy_logo.png" alt="Python Academy Logo"></a>
-        <h5 class="text-center">Founding Sponsor</h5>
-        <a href="http://continuum.io/"><img src="static/img/ContinuumAnalyticsLogo.png" alt="Continuum Analytics Logo"></a>
-        <h5 class="text-center">Location Sponsor</h5>
-        <a href="http://www.betahaus.com/berlin"><img src="static/img/betahaus-logo-retina.png" alt="Betahaus Logo"></a>
-        <h5 class="text-center"><a href="http://pydata.org/sponsor/info">Become a sponsor</a>.</h5>
-    </div>
-</div>
-
-
-<footer class="row">
-<hr/>
-<div class="large-8 columns">
-    <h5>The PyData Conference Series is brought to you by <a href="http://numfocus.org/">NumFOCUS Foundation</a>. </h5>
-</div>
-<div class="large-2 column">
-    <a href="#top">Back to top</a>
-</div>
-</footer>
-
-</body>
-</html>
-

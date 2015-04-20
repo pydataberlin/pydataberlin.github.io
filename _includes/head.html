@@ -1,0 +1,120 @@
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{{ page.title }}</title>
+<meta name="Description" content="PyData is the home for all things related to the use of Python in data management and analysis. It brings together Python enthusiasts at a novice level and includes Tutorials and corresponding talks as well as advanced talks by experts and package developers. The conference not only focuses on the application of data science tools but also on underlying algorithms and patterns. After a very successful PyData Berlin 2014 hosted at the BCC we are thrilled to announce PyData Berlin 2015, this time taking place at Betahaus Berlin.">
+<meta name="Keywords" content="PyData Berlin 2015 Python Big Data Analytics Spark PySpark Pandas NumFocus Conda NumPy SciPy conference MeetUp">
+<link rel="stylesheet" href="static/stylesheets/foundation.css" />
+<link rel="stylesheet" href="static/stylesheets/app.css" />
+<link rel="shortcut icon" href="static/img/favicon.ico">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="//code.jquery.com/jquery-latest.min.js"></script>
+<script src="//unslider.com/unslider.min.js"></script>
+<script src="static/javascripts/app.js"></script>
+
+<script>
+$(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					if (target.length) {
+						scrollPosition = target.offset().top - $('.fixed').height();
+						$('html,body').animate({
+							scrollTop: scrollPosition
+						}, 1000);
+						return false;
+					}
+	            }
+            });
+        });
+
+$(document).ready(function(){
+    topResize();
+	if(window.innerWidth < 1025){
+		$('.fixed').css('margin-left', 0);
+		$('.mainBanner').removeClass('fixed');
+		$('#banner').css('margin-top', 0);
+		$('#background').hide();
+		$('#banner').hide();
+	}else{
+		$('.mainBanner').addClass('fixed');
+		$('.fixed').css('margin-left', -$('.fixed').width()/2);
+		$('#banner').css('margin-top', $('.fixed').height());
+		$('#background').show();
+		$('#banner').show();
+	}
+});	
+
+$(window).resize(function(){
+	topResize();
+	if(window.innerWidth < 1025){
+		$('.fixed').css('margin-left', 0);
+		$('.mainBanner').removeClass('fixed');
+		$('#banner').css('margin-top', 0);
+		$('#background').hide();
+		$('#banner').hide();
+	}else{
+		$('.mainBanner').addClass('fixed');
+		$('.fixed').css('margin-left', -$('.fixed').width()/2);
+		$('#banner').css('margin-top', $('.fixed').height());
+		$('#background').show();
+		$('#banner').show();
+	}
+});
+
+function topResize(){
+	$('.fixed').css('margin-left', -$('.fixed').width()/2);
+	$('#banner').css('margin-top', $('.fixed').height());
+	$('#background').css('height', $('.fixed').height());
+};
+
+$(function() {
+    $('.banner').unslider({
+	speed: 1000,               //  The speed to animate each slide (in milliseconds)
+	delay: 5000,              //  The delay between slide animations (in milliseconds)
+	complete: function() {},  //  A function that gets called after every slide animation
+	keys: true,               //  Enable keyboard (left, right) arrow shortcuts
+	dots: true,               //  Display dot navigation
+	fluid: true              //  Support responsive design. May break non-responsive designs
+});
+});
+
+</script>
+<style>
+.fixed{
+	position:fixed;
+	left:50%;
+	z-index:150;
+}#background{
+	position:fixed;
+	left:0;
+	width:100%;
+	background:url(static/img/trDot.png) repeat;
+}.button-group li:first-of-type a{
+	border-bottom-left-radius:3px;
+}.button-group li:last-of-type a{
+	border-bottom-right-radius:3px;
+}#banner{
+	padding:1em 0 !important;
+}.banner{
+	position:relative; 
+	overflow:auto;
+	background:url(static/img/berlin-bg_cut.jpg) center;
+	background-size:cover;
+	border-radius:3px;
+}.banner li{
+	list-style:none;
+	height:495px;
+	text-align:left;
+}.banner ul li{
+	float:left;
+	margin-top:120px;
+	font-size:60px;
+	color:#f9f9f9;
+	text-shadow:1px 1px 0px #000;
+}.banner a{
+    color:#f9f9f9;
+}
+</style>
+</head>
