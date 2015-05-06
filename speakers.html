@@ -13,14 +13,14 @@ title: PyData Berlin 2015 | May 29-30
       {% endfor %}
     </div>
     
-    <!--<a name="keynotes"><h1>Speakers</h1></a>-->
+    <a name="speakers"><h1>Speakers</h1></a>
     
-    <!--<div class="speaker-container">-->
-      <!--{% assign collection = site.data.keynotes | where:"type","talk" | sort: "name", "first" %}-->
-      <!--{% for speaker in collection %}-->
-        <!--{% include speaker.html speaker=speaker %}-->
-      <!--{% endfor %}-->
-    <!--</div>-->
+    <div class="speaker-container">
+      {% assign collection = site.data.keynotes | where:"type","talk" | sort: "name", "first" %}
+      {% for speaker in collection %}
+        {% include speaker.html speaker=speaker %}
+      {% endfor %}
+    </div>
   </div>
   {% include sponsors.html %}
 </div>

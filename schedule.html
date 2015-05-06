@@ -7,61 +7,105 @@ title: PyData Berlin 2015 | May 29-30
         <div class="flatblock-content">
             <h1>Schedule</h1>
 
-            <p>We are looking forward to tutorials and talks at expert and novice level. PyData focuses on Python related tools as well as on algorithms, machine learning and predictive analytics.</p>
-            <p>We are happy to announce our <a href="speakers.html">keynote speakers</a> Trent McConaghy, Matthew Rocklin and Felix Wick.</p>
-            <p>Please visit <a href="http://www.pydata.org/berlin2014/">pydata.org/berlin2014</a> for the schedule of PyData Berlin 2014</p>
-            <p>The full schedule will be published after the <a href="index.html#cfp">CFP</a> has been closed.</p>
-        </div>
-        
-        {% assign days = site.data.schedule | group_by:"date" %}
-        {% for day in days %}
-          <div class="row">
-            <div class="medium-12 large-12 columns">
-              {{day.name}}
+            <div class="row">
+                <div class="medium-12 large-12 columns">
+                    Friday 
+                </div>
+                <div class="medium-2 large-2 columns">
+                    Time
+                </div>
+                <div class="medium-5 large-5 columns">
+                    Track 1
+                </div>
+                <div class="medium-5 large-5 columns">
+                    Track 2
+                </div>
             </div>
-            <div class="medium-2 large-2 columns">
-              Time
-            </div>
-            <div class="medium-5 large-5 columns">
-              Track 1
-            </div>
-            <div class="medium-5 large-5 columns">
-              Track 2
-            </div>
-          </div>
-          {% for slots in day.items | sort: "time" %}
-            <div class="row schedule">
-              <div class="medium-2 large-2 columns">
-                {{slots.time}}
-              </div>
-              {% if slots.break != '' %}
+
+            <div class="row">
+                <div class="medium-2 large-2 columns">
+                    8:30
+                </div>
                 <div class="medium-10 large-10 columns type-break">
-                  <center>{{slots.break}}</center>
+                    Breakfast and Registration
                 </div>
-              {% else %}
-                {% assign speakers = site.data.keynotes | where:"id",slots.track1 %}
-                {% assign speaker = speakers.first %}
-                {% if speaker %}
-                  {% assign klassTrack1 = speaker.type %}
-                {% endif %}
-                <div class="medium-5 large-5 columns type-{{klassTrack1}}">
-                  <strong>{{ speaker.firstname }} {{ speaker.name }}</strong><br>
-                  {{ speaker.title }}
-                </div>
-                {% assign speakers = site.data.keynotes | where:"id",slots.track2 %}
-                {% assign speaker = speakers.first %}
-                {% if speaker %}
-                  {% assign klassTrack2 = speaker.type %}
-                {% endif %}
-                <div class="medium-5 large-5 columns type-{{klassTrack2}}">
-                  <strong>{{ speaker.firstname }} {{ speaker.name }}</strong><br>
-                  {{ speaker.title }}
-                </div>
-              {% endif %}
             </div>
-          {% endfor %}
-        {% endfor %}
+
+            <div class="row">
+                <div class="medium-2 large-2 columns">
+                    9:30
+                </div>
+                <div class="medium-10 large-10 columns type-keynote">
+                    Keynote: M. Rocklin, Blaze (50 min) 
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="medium-2 large-2 columns">
+                    10:20
+                </div>
+                <div class="medium-5 large-5 columns type-talk">
+                    Tutorial: Bokeh (130 min)<br>
+                    Christine Doig
+                </div>
+                <div class="medium-5 large-5 columns type-talk">
+                    <div class="type-talk">
+                        Haenel: Blosc
+                    </div>
+                    <br>
+                    <div class="type-talk">
+                        Haenel: Blosc
+                    </div>
+                    <br>
+                    <div class="type-talk">
+                        Haenel: Blosc
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="medium-2 large-2 columns">
+                    12:30
+                </div>
+                <div class="medium-10 large-10 columns type-break">
+                    Lunch
+                </div>
+            </div>
+
+            <!--[>{% for slots in day.items | sort: "time" %}<]-->
+            <!--<div class="row schedule">-->
+                <!--<div class="medium-2 large-2 columns">-->
+                    <!--Time-->
+                <!--</div>-->
+                <!--[>{% if slots.break != '' %}<]-->
+                <!--[><div class="medium-10 large-10 columns type-break"><]-->
+                <!--[><center>Slots break</center><]-->
+                <!--[></div><]-->
+                <!--[>{% else %}<]-->
+                <!--[>{% assign speakers = site.data.keynotes | where:"id",slots.track1 %}<]-->
+                <!--[>{% assign speaker = speakers.first %}<]-->
+                <!--[>{% if speaker %}<]-->
+                <!--[>{% assign klassTrack1 = speaker.type %}<]-->
+                <!--[>{% endif %}<]-->
+                <!--<div class="medium-5 large-5 columns type-talk">-->
+                    <!--<strong>Christine</strong><br>-->
+                    <!--Bokeh -->
+                <!--</div>-->
+                <!--[>{% assign speakers = site.data.keynotes | where:"id",slots.track2 %}<]-->
+                <!--[>{% assign speaker = speakers.first %}<]-->
+                <!--[>{% if speaker %}<]-->
+                <!--[>{% assign klassTrack2 = speaker.type %}<]-->
+                <!--[>{% endif %}<]-->
+                <!--<div class="medium-5 large-5 columns type-talk">-->
+                    <!--<strong>Valentin</strong><br>-->
+                    <!--Blosc-->
+                <!--</div>-->
+                <!--[>{% endif %}<]-->
+            <!--</div>-->
+            <!--[>{% endfor %}<]-->
+
+        </div>
     </div>
 
-{% include sponsors.html %}
+    {% include sponsors.html %}
 </div>
