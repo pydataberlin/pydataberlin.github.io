@@ -48,3 +48,22 @@
   font-size: 1em;
   margin-bottom: 10px;
 }
+
+.schedule .columns {
+  height: 100%;
+}
+.type-talk {
+  background-color: #00759c;
+}
+
+.type-keynote {
+  background-color: #007faa;
+}
+
+.type-tutorial {
+  background-color: #7b949e;
+}
+
+.type-break {
+  background-color: #ee9041;
+}
