@@ -18,7 +18,7 @@ def retrieve(doc_id, out):
 
     out_path = os.path.dirname(os.path.realpath(__file__)) + '/../_data/' + out + '.json'
     with open(out_path, 'w') as outfile:
-            json.dump(selection, outfile)
+        json.dump(selection, outfile, indent=4, separators=(',', ': '))
 
 
 retrieve("1DXS3e1Z6AHXr7frGhyoJnvSdSIvn2m_LA52X4f4agbU", "keynotes")
