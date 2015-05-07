@@ -45,14 +45,14 @@
         "id": "mcconaghy_0"
     },
     {
-        "bio": "Valentin is a freelance software engineer interested in compression, exploiting\nthe memory hierarchy for accelerated computation and out-of-core compute\nengines.  in the past, he has worked on psychophysics data analysis,\nlarge-scale brain simulations and analytical engines for business intelligence.\nalso, he wrote a book about git and has contributed to a selection open source\nprojects. he currently resides in Berlin where he also co-organizes the monthly\npydata-berlin meetups.",
+        "bio": "Valentin is a freelance software engineer interested in compression, exploiting the memory hierarchy for accelerated computation and out-of-core compute engines.  in the past, he has worked on psychophysics data analysis, large-scale brain simulations and analytical engines for business intelligence. Also, he wrote a book about git and has contributed to a selection open source projects. he currently resides in Berlin where he also co-organizes the monthly pydata-berlin meetups.",
         "twitter": "esc___",
         "organisation": "haenel.co",
         "name": "Haenel",
         "firstname": "Valentin",
         "title": "Blosc",
         "track": "2",
-        "abstract": "Blosc is a fast metacodec two main features: the shuffle filter and threading. The shuffle filter, which is implemented using SSE2 instructions, allows reordering bytes to reduce the complexity of certain datasets. Threading, on the other hand, allows parallelization of existing codecs, hence the term *metacodec*. Blosc was originally conceived to mitigate the problem of starving CPUs which results from the ever growing divide between clock speed and memory latency. Recently, it has become increasingly useful for other scenarios too, for example, out-of-core approaches and compressed in-memory storage.  Blosc has a small codebase and is implemented in C. Additionally, several pieces of interesting software, largely written in Python, have emerged that make use of Blosc, showcasing it's potential and exploring the new use-cases. Bcolz, for example, is a compressed in-memory and out-of-core container for numerical data. This talk is about Blosc and it's Python friends.",
+        "abstract": "Blosc is a fast metacodec with two main features: the shuffle filter and threading. The shuffle filter, which is implemented using SSE2 instructions, allows reordering bytes to reduce the complexity of certain datasets. Threading, on the other hand, allows parallelization of existing codecs, hence the term *metacodec*. Blosc was originally conceived to mitigate the problem of starving CPUs which results from the ever growing divide between clock speed and memory latency. Recently, it has become increasingly useful for other scenarios too, for example, out-of-core approaches and compressed in-memory storage.  Blosc has a small codebase and is implemented in C. Additionally, several pieces of interesting software, largely written in Python, have emerged that make use of Blosc, showcasing it's potential and exploring the new use-cases. Bcolz, for example, is a compressed in-memory and out-of-core container for numerical data. This talk is about Blosc and it's Python friends.",
         "linkedin": "http://de.linkedin.com/pub/valentin-haenel/b0/358/591",
         "time": "10:20:00 AM",
         "date": "5/29/2015",
@@ -75,7 +75,7 @@
         "id": "alangot_0"
     },
     {
-        "bio": "Christine Doig is a Data Scientist at Continuum Analytics. She holds a M.S. in Industrial Engineering from UPC, Barcelona, where she also started a Masters in Innovation and Research in Informatics, Data Mining and BI, before joining Continuum Analytics.<br><br>\nShe is interested in Data Science and Python and loves to share her knowledge with others. She has taught tutorials and presented talks on conda, Blaze, Bokeh, scikit-learn and Data Science at PyCon, PyTexas, PyCon Spain, PyData Dallas, ScipyConf and local meetup groups like PyBCN, PyladiesBCN, APUG and ACM SIGKDD. Blogposts, talks, slides and videos can be found on her site http://chdoig.github.io/.",
+        "bio": "Christine Doig is a Data Scientist at Continuum Analytics. She holds a M.S. in Industrial Engineering from UPC, Barcelona, where she also started a Masters in Innovation and Research in Informatics, Data Mining and BI, before joining Continuum Analytics.<br><br> She is interested in Data Science and Python and loves to share her knowledge with others. She has taught tutorials and presented talks on conda, Blaze, Bokeh, scikit-learn and Data Science at PyCon, PyTexas, PyCon Spain, PyData Dallas, ScipyConf and local meetup groups like PyBCN, PyladiesBCN, APUG and ACM SIGKDD. Blogposts, talks, slides and videos can be found on her site http://chdoig.github.io/.",
         "twitter": "",
         "organisation": "Continuum Analytics",
         "name": "Doig",
