@@ -1,11 +1,30 @@
 {% assign speaker = include.speaker %}
 
+<style>
+@media (max-width: 600px) {
+  .speaker-thumb {
+      width:80px;
+   }
+   .speaker-content {
+       margin-left: 105px;
+   }
+}
+@media (max-width: 350px) {
+  .speaker-thumb {
+      width:60px;
+   }
+   .speaker-content {
+       margin-left: 80px;
+   }
+}
+</style>
 <div class="speaker">
   <div class="speaker-thumb">
     <img src="static/assets/speaker/{{speaker.firstname | slugify }}-{{ speaker.name | slugify }}.jpg" alt="{{speaker.firstname }} {{ speaker.name }}">
   </div>
   <div class="speaker-content">
-    <h3>{{ speaker.firstname }} {{ speaker.name }}</h3>
+      <a class="anchor" id={{ speaker.id }}></a>
+      <h3>{{ speaker.firstname }} {{ speaker.name }}</h3>
     <div class="small">{{ speaker.organisation }}</div>
     
     <strong>{{ speaker.title }}</strong>

@@ -36,7 +36,7 @@
   margin-top: 0.2rem;
 }
 .speaker-content {
-    margin-left: 200px;
+  margin-left: 200px;
 }
 
 .speaker-content h3 {
@@ -66,4 +66,17 @@
 
 .type-break {
   background-color: #ee9041;
+}
+.schedule-title {
+  color: #000000;
+  text-decoration:none;
+}
+.schedule-title:hover { 
+  color: #000000;
+}
+a.anchor {
+    display: block; 
+    position: relative; 
+    top: -130px;  
+    visibility: hidden;
 }
