@@ -1,0 +1,304 @@
+<?xml version='1.0' encoding='utf-8'?>
+<schedule>
+  <conference>
+    <title>PyData Berlin 2015</title>
+    <start>2015-05-29</start>
+    <end>2015-05-30</end>
+    <days>2</days>
+  </conference>
+  <day date="2015-05-29">
+    <room name="room_1">
+      <event>
+        <date>2015-05-29T09:30:00+02:00</date>
+        <start>09:30</start>
+        <duration>0</duration>
+        <room>room_1</room>
+        <title></title>
+        <type>keynote</type>
+        <language>en</language>
+        <abstract></abstract>
+        <persons>
+          <person>Matthew Rocklin</person>
+        </persons>
+      </event>
+      <event>
+        <date>2015-05-29T10:20:00+02:00</date>
+        <start>10:20</start>
+        <duration>0</duration>
+        <room>room_1</room>
+        <title>Blosc</title>
+        <type>talk</type>
+        <language>en</language>
+        <abstract>Blosc is a fast metacodec with</abstract>
+        <persons>
+          <person>Valentin Haenel</person>
+        </persons>
+      </event>
+      <event>
+        <date>2015-05-29T10:20:00+02:00</date>
+        <start>10:20</start>
+        <duration>0</duration>
+        <room>room_1</room>
+        <title>Interactive Data Visualizations with Python</title>
+        <type>talk</type>
+        <language>en</language>
+        <abstract>Bokeh is a Python interactive </abstract>
+        <persons>
+          <person>Christine Doig</person>
+        </persons>
+      </event>
+      <event>
+        <date>2015-05-29T11:00:00+02:00</date>
+        <start>11:00</start>
+        <duration>0</duration>
+        <room>room_1</room>
+        <title>Python Bindings for RAMCloud</title>
+        <type>talk</type>
+        <language>en</language>
+        <abstract>RAMCloud is a project which be</abstract>
+        <persons>
+          <person>Bithin Alangot</person>
+        </persons>
+      </event>
+      <event>
+        <date>2015-05-29T11:40:00+02:00</date>
+        <start>11:40</start>
+        <duration>0</duration>
+        <room>room_1</room>
+        <title>Scientific computing with Python: Tools for the solution of continuous problems</title>
+        <type>talk</type>
+        <language>en</language>
+        <abstract>Although not exactly a classic</abstract>
+        <persons>
+          <person>Claas Abert</person>
+        </persons>
+      </event>
+      <event>
+        <date>2015-05-29T13:30:00+02:00</date>
+        <start>13:30</start>
+        <duration>0</duration>
+        <room>room_1</room>
+        <title>Measure, don't Guess - How to find out if and where to optimize</title>
+        <type>talk</type>
+        <language>en</language>
+        <abstract>Python is a great language. Bu</abstract>
+        <persons>
+          <person>Mike Müller</person>
+        </persons>
+      </event>
+      <event>
+        <date>2015-05-29T13:30:00+02:00</date>
+        <start>13:30</start>
+        <duration>0</duration>
+        <room>room_1</room>
+        <title>Real-Time Monitoring of Distributed Systems</title>
+        <type>talk</type>
+        <language>en</language>
+        <abstract>Instrumentation has seen explo</abstract>
+        <persons>
+          <person>Tobias Kuhn</person>
+          <person>Nakul Selvaraj</person>
+        </persons>
+      </event>
+      <event>
+        <date>2015-05-29T14:10:00+02:00</date>
+        <start>14:10</start>
+        <duration>0</duration>
+        <room>room_1</room>
+        <title>Analysing and predicting inner-city parking space occupancy</title>
+        <type>talk</type>
+        <language>en</language>
+        <abstract>The city of Dresden has an exc</abstract>
+        <persons>
+          <person>Paul Balzer</person>
+        </persons>
+      </event>
+      <event>
+        <date>2015-05-29T15:10:00+02:00</date>
+        <start>15:10</start>
+        <duration>0</duration>
+        <room>room_1</room>
+        <title>A Data Science Operationalization Framework</title>
+        <type>talk</type>
+        <language>en</language>
+        <abstract>In a lot of our Data Science c</abstract>
+        <persons>
+          <person>Alexander Kagoshima</person>
+        </persons>
+      </event>
+      <event>
+        <date>2015-05-29T15:50:00+02:00</date>
+        <start>15:50</start>
+        <duration>0</duration>
+        <room>room_1</room>
+        <title>Smart cars of tomorrow: real-time driving patterns</title>
+        <type>talk</type>
+        <language>en</language>
+        <abstract>In recent years, the adoption </abstract>
+        <persons>
+          <person>Ronert Obst</person>
+        </persons>
+      </event>
+    </room>
+  </day>
+  <day date="2015-05-30">
+    <room name="room_1">
+      <event>
+        <date>2015-05-30T09:30:00+02:00</date>
+        <start>09:30</start>
+        <duration>0</duration>
+        <room>room_1</room>
+        <title>Rewiring the Internet for Ownership with Big Data and Blockchains</title>
+        <type>keynote</type>
+        <language>en</language>
+        <abstract>When it comes to ownership, th</abstract>
+        <persons>
+          <person>Trent McConaghy</person>
+        </persons>
+      </event>
+      <event>
+        <date>2015-05-30T10:20:00+02:00</date>
+        <start>10:20</start>
+        <duration>0</duration>
+        <room>room_1</room>
+        <title>Learning to use Docker for development</title>
+        <type>talk</type>
+        <language>en</language>
+        <abstract>A very simple tutorial, ideall</abstract>
+        <persons>
+          <person>Sylvain Bellemare</person>
+        </persons>
+      </event>
+      <event>
+        <date>2015-05-30T10:20:00+02:00</date>
+        <start>10:20</start>
+        <duration>0</duration>
+        <room>room_1</room>
+        <title>Lessons learned from applying PyData to our marketing organization</title>
+        <type>talk</type>
+        <language>en</language>
+        <abstract>For all e-commerce sites, mark</abstract>
+        <persons>
+          <person>Jose Luis Lopez Pino</person>
+        </persons>
+      </event>
+      <event>
+        <date>2015-05-30T11:10:00+02:00</date>
+        <start>11:10</start>
+        <duration>0</duration>
+        <room>room_1</room>
+        <title>What people need to be happy at work &amp; how you can influence a diverse team environment</title>
+        <type>talk</type>
+        <language>en</language>
+        <abstract>A lot of studies have investig</abstract>
+        <persons>
+          <person>Lea Böhm</person>
+        </persons>
+      </event>
+      <event>
+        <date>2015-05-30T13:30:00+02:00</date>
+        <start>13:30</start>
+        <duration>0</duration>
+        <room>room_1</room>
+        <title>From the Life of a Data Scientist</title>
+        <type>keynote</type>
+        <language>en</language>
+        <abstract>T. Davenport and DJ Patil have</abstract>
+        <persons>
+          <person>Felix Wick</person>
+        </persons>
+      </event>
+      <event>
+        <date>2015-05-30T14:20:00+02:00</date>
+        <start>14:20</start>
+        <duration>0</duration>
+        <room>room_1</room>
+        <title>Advanced Data Storage</title>
+        <type>talk</type>
+        <language>en</language>
+        <abstract>In this tutorial we will give </abstract>
+        <persons>
+          <person>Thomas Pfaff</person>
+        </persons>
+      </event>
+      <event>
+        <date>2015-05-30T14:20:00+02:00</date>
+        <start>14:20</start>
+        <duration>0</duration>
+        <room>room_1</room>
+        <title>Probabilistic Programming in Sports Analytics</title>
+        <type>talk</type>
+        <language>en</language>
+        <abstract>Probabilistic Programming allo</abstract>
+        <persons>
+          <person>Peadar Coyle</person>
+        </persons>
+      </event>
+      <event>
+        <date>2015-05-30T15:00:00+02:00</date>
+        <start>15:00</start>
+        <duration>0</duration>
+        <room>room_1</room>
+        <title>Indroduction to the PySpark DataFrame API</title>
+        <type>talk</type>
+        <language>en</language>
+        <abstract>Apache Spark is a computationa</abstract>
+        <persons>
+          <person>Peter Hoffmann</person>
+        </persons>
+      </event>
+      <event>
+        <date>2015-05-30T16:10:00+02:00</date>
+        <start>16:10</start>
+        <duration>0</duration>
+        <room>room_1</room>
+        <title>Peachbox: Agile and Accessible Big ETL Framework</title>
+        <type>talk</type>
+        <language>en</language>
+        <abstract>Today data is generated in gre</abstract>
+        <persons>
+          <person>Philipp Pahl</person>
+        </persons>
+      </event>
+      <event>
+        <date>2015-05-30T16:10:00+02:00</date>
+        <start>16:10</start>
+        <duration>0</duration>
+        <room>room_1</room>
+        <title>CostCla a cost-sensitive classification library</title>
+        <type>talk</type>
+        <language>en</language>
+        <abstract>Classification, in the context</abstract>
+        <persons>
+          <person>Alejandro Correa Bahnsen</person>
+        </persons>
+      </event>
+      <event>
+        <date>2015-05-30T16:50:00+02:00</date>
+        <start>16:50</start>
+        <duration>0</duration>
+        <room>room_1</room>
+        <title>Processing Hotel Reviews with Python</title>
+        <type>talk</type>
+        <language>en</language>
+        <abstract>In this talk I will present ex</abstract>
+        <persons>
+          <person>Miguel Fernando Cabrera</person>
+        </persons>
+      </event>
+      <event>
+        <date>2015-05-30T17:40:00+02:00</date>
+        <start>17:40</start>
+        <duration>0</duration>
+        <room>room_1</room>
+        <title>Lifecycle of Web Text Mining: Scrape to Sense</title>
+        <type>talk</type>
+        <language>en</language>
+        <abstract>Pillreports.net is an on-line </abstract>
+        <persons>
+          <person>Brian Carter</person>
+        </persons>
+      </event>
+    </room>
+  </day>
+</schedule>
