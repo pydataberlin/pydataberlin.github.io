@@ -343,5 +343,20 @@
         "date": "5/30/2015",
         "type": "talk",
         "id": "carter_0"
+    },
+    {
+        "bio": "Maths and complex systems nerd. I studied physics at Universidad Autonoma de Madrid, and done some research on systems biology in Spain and The Netherlands. Now I am interested in start-ups, new technologies and lean methodologies, still driven by curiosity and motivation. I am passionate about data democratization, data science and big data. I've been import.io Data Scientist for the last 2 years, where I am responsible of the analytics and data modelling for business and growth. I'v also been mentor in the first S2DS (Science to Data Science) course in the UK, a course for PhDs in Science to transition into real life Data Science.",
+        "twitter": "ignacio_elola",
+        "organisation": "import.io",
+        "name": "Elola",
+        "firstname": "Ignacio",
+        "title": "Python as a Framework for Analytics and Growth Hacking",
+        "track": "",
+        "abstract": "Python is the perfect language to build with little effort a framework to control and hack the growth of a company. Being import.io data scientist for the last 2 years, I've come across many different problems and needs on how to wrangle data, clean data, report on it and make predictions. In this talk I will cover all main analytics and data science needs of a start-up using Python, numpy, pandas, and sklearn. We will go through examples of how to wrangle analytics and KPIs in Python, and make simple models to do basic predictions that can really make the difference in the business world. For every use case I there will be snippets of code using IPython notebooks and some will be run as live demos.",
+        "linkedin": "https://uk.linkedin.com/pub/ignacio-elola-villar/63/5a2/94",
+        "time": "5:40:00 PM",
+        "date": "5/30/2015",
+        "type": "talk",
+        "id": "elola_0"
     }
 ]
