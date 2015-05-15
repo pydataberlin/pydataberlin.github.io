@@ -81,7 +81,7 @@ def events(root):
                 language.text = u'en'
 
                 abstract = etree.SubElement(event, 'abstract')
-                abstract.text = talk['abstract'][:30]
+                abstract.text = talk['abstract']
 
                 persons = etree.SubElement(event, 'persons')
                 for p in talk['persons']:
