@@ -20,7 +20,7 @@ def group_talks():
 
         date = datetime.datetime.strptime(t['date'],'%m/%d/%Y').date()
         time = datetime.datetime.strptime(t['time'], '%I:%M:%S %p')
-        dt = datetime.datetime(year=date.year, month=date.month, day=date.day, hour=time.hour, 
+        dt = datetime.datetime(year=date.year, month=date.month, day=date.day, hour=time.hour,
                 minute=time.minute, second=time.second)
         local_dt = pytz.timezone('Europe/Berlin').localize(dt)
 
@@ -28,7 +28,7 @@ def group_talks():
         t['room'] = 'room_1'
         t['datetime'] = local_dt
         t['duration'] = u'0'
-        t['persons'] = map(lambda e: e['firstname']+u' '+e['name'], values) 
+        t['persons'] = map(lambda e: e['firstname']+u' '+e['name'], values)
         t['type'] = values[0]['type']
         t['abstract'] = values[0]['abstract']
         talks.append(t)
@@ -69,19 +69,19 @@ def events(root):
                 duration.text = talk['duration']
 
                 room_entry = etree.SubElement(event, 'room')
-                room_entry.text = room 
+                room_entry.text = room
 
                 title = etree.SubElement(event, 'title')
                 title.text = talk['title']
 
                 type = etree.SubElement(event, 'type')
                 type.text = talk['type']
-                
+
                 language = etree.SubElement(event, 'language')
-                language.text = u'en' 
+                language.text = u'en'
 
                 abstract = etree.SubElement(event, 'abstract')
-                abstract.text = talk['abstract'][:30] 
+                abstract.text = talk['abstract'][:30]
 
                 persons = etree.SubElement(event, 'persons')
                 for p in talk['persons']:
