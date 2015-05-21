@@ -25,9 +25,9 @@ def group_talks():
         local_dt = pytz.timezone('Europe/Berlin').localize(dt)
 
         t['isodate'] = date.isoformat()
-        t['room'] = 'room_1'
+        t['room'] = values[0]['location']
         t['datetime'] = local_dt
-        t['duration'] = u'0'
+        t['duration'] = values[0]['duration_2']
         t['persons'] = map(lambda e: e['firstname']+u' '+e['name'], values)
         t['type'] = values[0]['type']
         t['abstract'] = values[0]['abstract']

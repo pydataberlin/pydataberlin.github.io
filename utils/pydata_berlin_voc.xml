@@ -7,12 +7,40 @@
     <days>2</days>
   </conference>
   <day date="2015-05-29">
-    <room name="room_1">
+    <room name="Eventspace">
+      <event>
+        <date>2015-05-29T10:20:00+02:00</date>
+        <start>10:20</start>
+        <duration>2:10:00</duration>
+        <room>Eventspace</room>
+        <title>Interactive Data Visualizations with Python</title>
+        <type>talk</type>
+        <language>en</language>
+        <abstract>Bokeh is a Python interactive visualization library that targets modern web browsers for presentation. It provides elegant, concise construction of novel graphics in the style of D3.js without having to write any JS. Attendees will learn how to get set up with Bokeh, key library and plotting concepts, how to plot basic glyphs, use high-level charts, style visualizations, configure plot tools, layer multiple plots, add interactions, deploy with the bokeh-server and embed plots in your applications. The tutorial will include notebooks and python scripts with exercises that will be solved during the session, with the aim of making the tutorial hands-on and interactive for attendees.&lt;br&gt;&lt;br&gt;The talk is aimed at Web developers, Data Scientists and Python programmers interested in data visualizations for the browser. Advanced beginner or intermediate python skills would be nice to have to get the most out of the tutorial.</abstract>
+        <persons>
+          <person>Christine Doig</person>
+        </persons>
+      </event>
+      <event>
+        <date>2015-05-29T13:30:00+02:00</date>
+        <start>13:30</start>
+        <duration>3:00:00</duration>
+        <room>Eventspace</room>
+        <title>Measure, don't Guess - How to find out if and where to optimize</title>
+        <type>talk</type>
+        <language>en</language>
+        <abstract>Python is a great language. But it can be slow compared to other languages for certain types of tasks. If applied appropriately, optimization may reduce program runtime or memory consumption considerably. But this often comes at a price. Optimization can be time consuming and the optimized program may be more complicated. This, in turn, means more maintenance effort. How do you find out if it is worthwhile to optimize your program? Where should you start? This tutorial will help you to answer these questions. You will learn how to find  an optimization strategy based on quantitative and objective criteria.&lt;br&gt;You will experience that one's gut feeling what to optimize is often wrong.&lt;br&gt;&lt;br&gt;The solution to this problem is: „Measure, Measure, and Measure!“. You will learn how to measure program run times as well as profile CPU and memory.&lt;br&gt;There are great tools available. You will learn how to use some of them. Measuring is not easy because, by definition, as soon as you start to measure, you influence your system. Keeping this impact as small as possible is important. Therefore, we will cover different measuring techniques.&lt;br&gt;&lt;br&gt;Furthermore, we will look at algorithmic improvements. You will see that the right data structure for the job can make a big difference. Finally, you will learn about different caching techniques.</abstract>
+        <persons>
+          <person>Mike Müller</person>
+        </persons>
+      </event>
+    </room>
+    <room name="Innospace">
       <event>
         <date>2015-05-29T09:30:00+02:00</date>
         <start>09:30</start>
-        <duration>0</duration>
-        <room>room_1</room>
+        <duration>0:50:00</duration>
+        <room>Innospace</room>
         <title></title>
         <type>keynote</type>
         <language>en</language>
@@ -24,8 +52,8 @@
       <event>
         <date>2015-05-29T10:20:00+02:00</date>
         <start>10:20</start>
-        <duration>0</duration>
-        <room>room_1</room>
+        <duration>0:40:00</duration>
+        <room>Innospace</room>
         <title>Blosc</title>
         <type>talk</type>
         <language>en</language>
@@ -35,23 +63,10 @@
         </persons>
       </event>
       <event>
-        <date>2015-05-29T10:20:00+02:00</date>
-        <start>10:20</start>
-        <duration>0</duration>
-        <room>room_1</room>
-        <title>Interactive Data Visualizations with Python</title>
-        <type>talk</type>
-        <language>en</language>
-        <abstract>Bokeh is a Python interactive visualization library that targets modern web browsers for presentation. It provides elegant, concise construction of novel graphics in the style of D3.js without having to write any JS. Attendees will learn how to get set up with Bokeh, key library and plotting concepts, how to plot basic glyphs, use high-level charts, style visualizations, configure plot tools, layer multiple plots, add interactions, deploy with the bokeh-server and embed plots in your applications. The tutorial will include notebooks and python scripts with exercises that will be solved during the session, with the aim of making the tutorial hands-on and interactive for attendees.&lt;br&gt;&lt;br&gt;The talk is aimed at Web developers, Data Scientists and Python programmers interested in data visualizations for the browser. Advanced beginner or intermediate python skills would be nice to have to get the most out of the tutorial.</abstract>
-        <persons>
-          <person>Christine Doig</person>
-        </persons>
-      </event>
-      <event>
         <date>2015-05-29T11:00:00+02:00</date>
         <start>11:00</start>
-        <duration>0</duration>
-        <room>room_1</room>
+        <duration>0:40:00</duration>
+        <room>Innospace</room>
         <title>Python Bindings for RAMCloud</title>
         <type>talk</type>
         <language>en</language>
@@ -63,8 +78,8 @@
       <event>
         <date>2015-05-29T11:40:00+02:00</date>
         <start>11:40</start>
-        <duration>0</duration>
-        <room>room_1</room>
+        <duration>0:40:00</duration>
+        <room>Innospace</room>
         <title>Scientific computing with Python: Tools for the solution of continuous problems</title>
         <type>talk</type>
         <language>en</language>
@@ -76,21 +91,8 @@
       <event>
         <date>2015-05-29T13:30:00+02:00</date>
         <start>13:30</start>
-        <duration>0</duration>
-        <room>room_1</room>
-        <title>Measure, don't Guess - How to find out if and where to optimize</title>
-        <type>talk</type>
-        <language>en</language>
-        <abstract>Python is a great language. But it can be slow compared to other languages for certain types of tasks. If applied appropriately, optimization may reduce program runtime or memory consumption considerably. But this often comes at a price. Optimization can be time consuming and the optimized program may be more complicated. This, in turn, means more maintenance effort. How do you find out if it is worthwhile to optimize your program? Where should you start? This tutorial will help you to answer these questions. You will learn how to find  an optimization strategy based on quantitative and objective criteria.&lt;br&gt;You will experience that one's gut feeling what to optimize is often wrong.&lt;br&gt;&lt;br&gt;The solution to this problem is: „Measure, Measure, and Measure!“. You will learn how to measure program run times as well as profile CPU and memory.&lt;br&gt;There are great tools available. You will learn how to use some of them. Measuring is not easy because, by definition, as soon as you start to measure, you influence your system. Keeping this impact as small as possible is important. Therefore, we will cover different measuring techniques.&lt;br&gt;&lt;br&gt;Furthermore, we will look at algorithmic improvements. You will see that the right data structure for the job can make a big difference. Finally, you will learn about different caching techniques.</abstract>
-        <persons>
-          <person>Mike Müller</person>
-        </persons>
-      </event>
-      <event>
-        <date>2015-05-29T13:30:00+02:00</date>
-        <start>13:30</start>
-        <duration>0</duration>
-        <room>room_1</room>
+        <duration>0:40:00</duration>
+        <room>Innospace</room>
         <title>Real-Time Monitoring of Distributed Systems</title>
         <type>talk</type>
         <language>en</language>
@@ -103,8 +105,8 @@
       <event>
         <date>2015-05-29T14:10:00+02:00</date>
         <start>14:10</start>
-        <duration>0</duration>
-        <room>room_1</room>
+        <duration>0:40:00</duration>
+        <room>Innospace</room>
         <title>Analysing and predicting inner-city parking space occupancy</title>
         <type>talk</type>
         <language>en</language>
@@ -116,8 +118,8 @@
       <event>
         <date>2015-05-29T15:10:00+02:00</date>
         <start>15:10</start>
-        <duration>0</duration>
-        <room>room_1</room>
+        <duration>0:40:00</duration>
+        <room>Innospace</room>
         <title>A Data Science Operationalization Framework</title>
         <type>talk</type>
         <language>en</language>
@@ -129,8 +131,8 @@
       <event>
         <date>2015-05-29T15:50:00+02:00</date>
         <start>15:50</start>
-        <duration>0</duration>
-        <room>room_1</room>
+        <duration>0:40:00</duration>
+        <room>Innospace</room>
         <title>Smart cars of tomorrow: real-time driving patterns</title>
         <type>talk</type>
         <language>en</language>
@@ -142,12 +144,66 @@
     </room>
   </day>
   <day date="2015-05-30">
-    <room name="room_1">
+    <room name="Eventspace">
+      <event>
+        <date>2015-05-30T10:20:00+02:00</date>
+        <start>10:20</start>
+        <duration>1:30:00</duration>
+        <room>Eventspace</room>
+        <title>Learning to use Docker for development</title>
+        <type>talk</type>
+        <language>en</language>
+        <abstract>A very simple tutorial, ideally aimed at beginners, for both Docker and scientific Python, who wish to learn the basics to be able to create and manage their own development environments, using Docker.&lt;br&gt;&lt;br&gt;We'll write a Dockerfile to build a Docker image that will have a few basic scientific libraries (matplotlib, numpy, ipython/jupyter notebook). We'll run the notebook in the docker container, and then learn how to interact with the notebook.&lt;br&gt;&lt;br&gt;Next step, we'll use docker-machine to run our docker container on a remote host. (This may be practical for performance reasons.)&lt;br&gt;&lt;br&gt;If time allows, we may also spin up another container, running Postgres, or another data store (e.g.: Redis, Elasticsearch). We'll tie in the communication between both containers using docker-compose. We'll figure out a way of storing some data in our data store and plotting some graphs for it in the notebook.&lt;br&gt;&lt;br&gt;The goal of the tutorial is to empower the developers, such that they can totally take over their own development environment, meanwhile leveraging what Docker has to offer to do so. Hence, the tutorial will adopt a pace that beginners will be able to follow, such that at the end, they will have completed a re-usable Docker-based development environment, which they may extend and modify according to theirs needs, in the future</abstract>
+        <persons>
+          <person>Sylvain Bellemare</person>
+        </persons>
+      </event>
+      <event>
+        <date>2015-05-30T14:20:00+02:00</date>
+        <start>14:20</start>
+        <duration>1:30:00</duration>
+        <room>Eventspace</room>
+        <title>Advanced Data Storage</title>
+        <type>talk</type>
+        <language>en</language>
+        <abstract>In this tutorial we will give an introduction to two advanced data storage formats. HDF5 and NetCDF were designed to efficiently store the results of supercomputing applications like climate model outputs, or the data streams received from NASA's fleet of earth observing satellites. They provide a lot of optimizations concerning transparent file compression, speed of access or working with multiple files as if it were one large data set.&lt;br&gt;A couple of Python libraries exist that allow fast and pythonic access to these formats.&lt;br&gt;We will show you how to create and access these types of files from Python, and how to use their advanced features to tune them for maximum efficiency.</abstract>
+        <persons>
+          <person>Thomas Pfaff</person>
+        </persons>
+      </event>
+      <event>
+        <date>2015-05-30T16:10:00+02:00</date>
+        <start>16:10</start>
+        <duration>1:30:00</duration>
+        <room>Eventspace</room>
+        <title>Peachbox: Agile and Accessible Big ETL Framework</title>
+        <type>talk</type>
+        <language>en</language>
+        <abstract>Today data is generated in greater volumes than ever before. In addition to vast amounts of legacy data, new data sources such as application logs or social media complicate data-processing challenges. The ultimate goal is to gain insights and derive prescriptions to support decisions or develop predictive apps. On the other hand preceding steps of data integration and warehousing allowing for exploration and application of data are usually hard and require expert knowledge in order to design and implement it.&lt;br&gt;Peachbox solves this by providing an agile and accessible open source solution to the Big ETL process. Peachbox is a Python framework based on and conforming to the ‘Lambda Architecture’, which in turn is an abstracted pattern providing principles and best practices for real-time and scalable data systems. The main underlying technology is PySpark.&lt;br&gt;In the tutorial we will set up Peachbox and implement a general and extensible Big ETL system. Furthermore we will explore potential applications.</abstract>
+        <persons>
+          <person>Philipp Pahl</person>
+        </persons>
+      </event>
+      <event>
+        <date>2015-05-30T17:40:00+02:00</date>
+        <start>17:40</start>
+        <duration>0:40:00</duration>
+        <room>Eventspace</room>
+        <title>Python as a Framework for Analytics and Growth Hacking</title>
+        <type>talk</type>
+        <language>en</language>
+        <abstract>Python is the perfect language to build with little effort a framework to control and hack the growth of a company. Being import.io data scientist for the last 2 years, I've come across many different problems and needs on how to wrangle data, clean data, report on it and make predictions. In this talk I will cover all main analytics and data science needs of a start-up using Python, numpy, pandas, and sklearn. We will go through examples of how to wrangle analytics and KPIs in Python, and make simple models to do basic predictions that can really make the difference in the business world. For every use case I there will be snippets of code using IPython notebooks and some will be run as live demos.</abstract>
+        <persons>
+          <person>Ignacio Elola</person>
+        </persons>
+      </event>
+    </room>
+    <room name="Innospace">
       <event>
         <date>2015-05-30T09:30:00+02:00</date>
         <start>09:30</start>
-        <duration>0</duration>
-        <room>room_1</room>
+        <duration>0:50:00</duration>
+        <room>Innospace</room>
         <title>Rewiring the Internet for Ownership with Big Data and Blockchains</title>
         <type>keynote</type>
         <language>en</language>
@@ -159,21 +215,8 @@
       <event>
         <date>2015-05-30T10:20:00+02:00</date>
         <start>10:20</start>
-        <duration>0</duration>
-        <room>room_1</room>
-        <title>Learning to use Docker for development</title>
-        <type>talk</type>
-        <language>en</language>
-        <abstract>A very simple tutorial, ideally aimed at beginners, for both Docker and scientific Python, who wish to learn the basics to be able to create and manage their own development environments, using Docker.&lt;br&gt;&lt;br&gt;We'll write a Dockerfile to build a Docker image that will have a few basic scientific libraries (matplotlib, numpy, ipython/jupyter notebook). We'll run the notebook in the docker container, and then learn how to interact with the notebook.&lt;br&gt;&lt;br&gt;Next step, we'll use docker-machine to run our docker container on a remote host. (This may be practical for performance reasons.)&lt;br&gt;&lt;br&gt;If time allows, we may also spin up another container, running Postgres, or another data store (e.g.: Redis, Elasticsearch). We'll tie in the communication between both containers using docker-compose. We'll figure out a way of storing some data in our data store and plotting some graphs for it in the notebook.&lt;br&gt;&lt;br&gt;The goal of the tutorial is to empower the developers, such that they can totally take over their own development environment, meanwhile leveraging what Docker has to offer to do so. Hence, the tutorial will adopt a pace that beginners will be able to follow, such that at the end, they will have completed a re-usable Docker-based development environment, which they may extend and modify according to theirs needs, in the future</abstract>
-        <persons>
-          <person>Sylvain Bellemare</person>
-        </persons>
-      </event>
-      <event>
-        <date>2015-05-30T10:20:00+02:00</date>
-        <start>10:20</start>
-        <duration>0</duration>
-        <room>room_1</room>
+        <duration>0:40:00</duration>
+        <room>Innospace</room>
         <title>Lessons learned from applying PyData to our marketing organization</title>
         <type>talk</type>
         <language>en</language>
@@ -185,8 +228,8 @@
       <event>
         <date>2015-05-30T11:10:00+02:00</date>
         <start>11:10</start>
-        <duration>0</duration>
-        <room>room_1</room>
+        <duration>0:40:00</duration>
+        <room>Innospace</room>
         <title>What people need to be happy at work &amp; how you can influence a diverse team environment</title>
         <type>talk</type>
         <language>en</language>
@@ -198,8 +241,8 @@
       <event>
         <date>2015-05-30T13:30:00+02:00</date>
         <start>13:30</start>
-        <duration>0</duration>
-        <room>room_1</room>
+        <duration>0:50:00</duration>
+        <room>Innospace</room>
         <title>From the Life of a Data Scientist</title>
         <type>keynote</type>
         <language>en</language>
@@ -211,21 +254,8 @@
       <event>
         <date>2015-05-30T14:20:00+02:00</date>
         <start>14:20</start>
-        <duration>0</duration>
-        <room>room_1</room>
-        <title>Advanced Data Storage</title>
-        <type>talk</type>
-        <language>en</language>
-        <abstract>In this tutorial we will give an introduction to two advanced data storage formats. HDF5 and NetCDF were designed to efficiently store the results of supercomputing applications like climate model outputs, or the data streams received from NASA's fleet of earth observing satellites. They provide a lot of optimizations concerning transparent file compression, speed of access or working with multiple files as if it were one large data set.&lt;br&gt;A couple of Python libraries exist that allow fast and pythonic access to these formats.&lt;br&gt;We will show you how to create and access these types of files from Python, and how to use their advanced features to tune them for maximum efficiency.</abstract>
-        <persons>
-          <person>Thomas Pfaff</person>
-        </persons>
-      </event>
-      <event>
-        <date>2015-05-30T14:20:00+02:00</date>
-        <start>14:20</start>
-        <duration>0</duration>
-        <room>room_1</room>
+        <duration>0:40:00</duration>
+        <room>Innospace</room>
         <title>Probabilistic Programming in Sports Analytics</title>
         <type>talk</type>
         <language>en</language>
@@ -237,8 +267,8 @@
       <event>
         <date>2015-05-30T15:00:00+02:00</date>
         <start>15:00</start>
-        <duration>0</duration>
-        <room>room_1</room>
+        <duration>0:40:00</duration>
+        <room>Innospace</room>
         <title>Indroduction to the PySpark DataFrame API</title>
         <type>talk</type>
         <language>en</language>
@@ -250,21 +280,8 @@
       <event>
         <date>2015-05-30T16:10:00+02:00</date>
         <start>16:10</start>
-        <duration>0</duration>
-        <room>room_1</room>
-        <title>Peachbox: Agile and Accessible Big ETL Framework</title>
-        <type>talk</type>
-        <language>en</language>
-        <abstract>Today data is generated in greater volumes than ever before. In addition to vast amounts of legacy data, new data sources such as application logs or social media complicate data-processing challenges. The ultimate goal is to gain insights and derive prescriptions to support decisions or develop predictive apps. On the other hand preceding steps of data integration and warehousing allowing for exploration and application of data are usually hard and require expert knowledge in order to design and implement it.&lt;br&gt;Peachbox solves this by providing an agile and accessible open source solution to the Big ETL process. Peachbox is a Python framework based on and conforming to the ‘Lambda Architecture’, which in turn is an abstracted pattern providing principles and best practices for real-time and scalable data systems. The main underlying technology is PySpark.&lt;br&gt;In the tutorial we will set up Peachbox and implement a general and extensible Big ETL system. Furthermore we will explore potential applications.</abstract>
-        <persons>
-          <person>Philipp Pahl</person>
-        </persons>
-      </event>
-      <event>
-        <date>2015-05-30T16:10:00+02:00</date>
-        <start>16:10</start>
-        <duration>0</duration>
-        <room>room_1</room>
+        <duration>0:40:00</duration>
+        <room>Innospace</room>
         <title>CostCla a cost-sensitive classification library</title>
         <type>talk</type>
         <language>en</language>
@@ -276,8 +293,8 @@
       <event>
         <date>2015-05-30T16:50:00+02:00</date>
         <start>16:50</start>
-        <duration>0</duration>
-        <room>room_1</room>
+        <duration>0:40:00</duration>
+        <room>Innospace</room>
         <title>Processing Hotel Reviews with Python</title>
         <type>talk</type>
         <language>en</language>
@@ -289,27 +306,14 @@
       <event>
         <date>2015-05-30T17:40:00+02:00</date>
         <start>17:40</start>
-        <duration>0</duration>
-        <room>room_1</room>
+        <duration>0:40:00</duration>
+        <room>Innospace</room>
         <title>Lifecycle of Web Text Mining: Scrape to Sense</title>
         <type>talk</type>
         <language>en</language>
         <abstract>Pillreports.net is an on-line database of reviews of Ecstasy pills. In consumer theory illicit drugs are experience goods, in that the contents are not known until the time of consumption. Websites like Pillreports.net, may be viewed as an attempt to bridge that gap, as well as highlighting instances, where a particular pill is producing undesirable effects. This talk will present the experiences and insights from a text mining project using data scraped from the Pillreports.net site.&lt;br&gt;&lt;ul&gt;&lt;li&gt;The setting up and the benefits, ease of using BeautifulSoup package and pymnogo to store the data in MongoDB will be outlined.&lt;/li&gt;&lt;li&gt;A brief overview of some interesting parts of data cleansing will be detailed.&lt;/li&gt;&lt;li&gt;Insights and understanding of the data gained from applying &lt;b&gt;classification and clustering&lt;/b&gt; techniques will be outlined. In particular visualizations of decision boundaries in classification using "most important variables". Similarly visualizations of PCA projections for understanding cluster separation will be detailed to illustrate cluster separation. &lt;/li&gt;&lt;br&gt;The talk will be presented in the iPython notebook and all relevant datasets and code will be supplied. Python Packages Used: (bs4, matplotlib, nltk, numpy, pandas, re, seaborn, sklearn, scipy, urllib2)</abstract>
         <persons>
           <person>Brian Carter</person>
-        </persons>
-      </event>
-      <event>
-        <date>2015-05-30T17:40:00+02:00</date>
-        <start>17:40</start>
-        <duration>0</duration>
-        <room>room_1</room>
-        <title>Python as a Framework for Analytics and Growth Hacking</title>
-        <type>talk</type>
-        <language>en</language>
-        <abstract>Python is the perfect language to build with little effort a framework to control and hack the growth of a company. Being import.io data scientist for the last 2 years, I've come across many different problems and needs on how to wrangle data, clean data, report on it and make predictions. In this talk I will cover all main analytics and data science needs of a start-up using Python, numpy, pandas, and sklearn. We will go through examples of how to wrangle analytics and KPIs in Python, and make simple models to do basic predictions that can really make the difference in the business world. For every use case I there will be snippets of code using IPython notebooks and some will be run as live demos.</abstract>
-        <persons>
-          <person>Ignacio Elola</person>
         </persons>
       </event>
     </room>
