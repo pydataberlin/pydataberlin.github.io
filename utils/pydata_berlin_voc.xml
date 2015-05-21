@@ -141,6 +141,19 @@
           <person>Ronert Obst</person>
         </persons>
       </event>
+      <event>
+        <date>2015-05-29T16:30:00+02:00</date>
+        <start>16:30</start>
+        <duration>1:00:00</duration>
+        <room>Innospace</room>
+        <title>Lightning Talks</title>
+        <type>talk</type>
+        <language>en</language>
+        <abstract></abstract>
+        <persons>
+          <person> </person>
+        </persons>
+      </event>
     </room>
   </day>
   <day date="2015-05-30">
@@ -236,6 +249,19 @@
         <abstract>A lot of studies have investigated lately how happy and engaged people are at work. They found that a big influencer is the team atmosphere and the relationship you have with your boss. &lt;br&gt;&lt;br&gt;Being engaged describes a state where you feel energized, involved and effective. Looking at the numbers, we'll find that there are only about 16% of people that are truly engaged at work. &lt;br&gt;&lt;br&gt;The talk will give an insight on things that lead to a happier work environment, give inspiration for what you can do to actively shape a happy work environment and how this will establish the foundation for more diversity within your team.</abstract>
         <persons>
           <person>Lea Böhm</person>
+        </persons>
+      </event>
+      <event>
+        <date>2015-05-30T11:50:00+02:00</date>
+        <start>11:50</start>
+        <duration>0:40:00</duration>
+        <room>Innospace</room>
+        <title>Panel Discussion</title>
+        <type>talk</type>
+        <language>en</language>
+        <abstract></abstract>
+        <persons>
+          <person> </person>
         </persons>
       </event>
       <event>

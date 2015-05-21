@@ -4,9 +4,41 @@ import pytz
 from lxml import etree
 import itertools
 
+other_events = [
+        {"bio":"",
+         "twitter": "",
+         "organisation": "",
+         "name": "",
+         "firstname": "",
+         "title": "Lightning Talks",
+         "abstract": "",
+         "linkedin": "",
+         "duration": "1:00:00",
+         "location": "Innospace",
+         "time": "4:30:00 PM",
+         "date": "5/29/2015",
+         "type": "talk",
+         "id": "" },
+        {"bio": "",
+         "twitter": "",
+         "organisation": "",
+         "name": "",
+         "firstname": "",
+         "title": "Panel Discussion",
+         "abstract": "",
+         "linkedin": "",
+         "duration": "0:40:00",
+         "location": "Innospace",
+         "time": "11:50:00 AM",
+         "date": "5/30/2015",
+         "type": "talk",
+         "id": ""}]
+
 raw_talks = None
 with open('../_data/keynotes.json', 'r') as f:
     raw_talks = json.loads(f.read())
+
+raw_talks = raw_talks + other_events
 
 def group_talks():
     g = itertools.groupby(raw_talks, lambda t: t['title'])
