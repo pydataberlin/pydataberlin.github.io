@@ -27,7 +27,7 @@ def group_talks():
         t['isodate'] = date.isoformat()
         t['room'] = values[0]['location']
         t['datetime'] = local_dt
-        t['duration'] = values[0]['duration_2']
+        t['duration'] = values[0]['duration']
         t['persons'] = map(lambda e: e['firstname']+u' '+e['name'], values)
         t['type'] = values[0]['type']
         t['abstract'] = values[0]['abstract']
