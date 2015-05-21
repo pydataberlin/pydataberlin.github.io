@@ -12,7 +12,8 @@
         "time": "9:30:00 AM",
         "date": "5/29/2015",
         "type": "keynote",
-        "id": "rocklin_0"
+        "id": "rocklin_0",
+        "duration_2": "0:50:00"
     },
     {
         "bio": "Felix Wick leads the machine learning and core development team at Blue Yonder, a SaaS provider for predictive applications. He obtained his diploma (2008) and PhD (2011) in physics at the Karlsruhe Institute of Technology (KIT). The topic of his research was experimental particle physics with a focus on statistical data analysis. In 2011, he joined Blue Yonder as Data Scientist, building predictive analytics solutions for various customer projects. He now focuses on the development of machine learning and data science algorithms primarily based on Python.",
@@ -27,7 +28,8 @@
         "time": "1:30:00 PM",
         "date": "5/30/2015",
         "type": "keynote",
-        "id": "wick_0"
+        "id": "wick_0",
+        "duration_2": "0:50:00"
     },
     {
         "bio": "Trent McConaghy, PhD has been doing machine learning (ML) research since the mid 90s. He co-founded ascribe GmbH, which enables copyright protection via internet-scale ML and the blockchain. Before that, he co-founded Solido where he applied ML to circuit design; the majority of big semis now use Solido. Before that, he co-founded ADA also doing ML + circuits; it was acquired in 2004. Before that he did ML research at the Canadian Department of Defense. He has written two books and 50 papers+patents on ML. He co-organizes the Berlin ML meetup. He keynoted Data Science Day Berlin 2014, gave an invited talk at PyData Berlin 2014, and more.",
@@ -42,7 +44,8 @@
         "time": "9:30:00 AM",
         "date": "5/30/2015",
         "type": "keynote",
-        "id": "mcconaghy_0"
+        "id": "mcconaghy_0",
+        "duration_2": "0:50:00"
     },
     {
         "bio": "Valentin is a freelance software engineer interested in compression, exploiting the memory hierarchy for accelerated computation and out-of-core compute engines.  in the past, he has worked on psychophysics data analysis, large-scale brain simulations and analytical engines for business intelligence. Also, he wrote a book about git and has contributed to a selection open source projects. he currently resides in Berlin where he also co-organizes the monthly pydata-berlin meetups.",
@@ -57,7 +60,8 @@
         "time": "10:20:00 AM",
         "date": "5/29/2015",
         "type": "talk",
-        "id": "haenel_0"
+        "id": "haenel_0",
+        "duration_2": "0:40:00"
     },
     {
         "bio": "I am a PhD student at Amrita University, Amritapuri Campus, India. My area of research is in\u00ad-memory storage systems. I have set up RAMCloud cluster in my lab and carried out various experiment over it. I am also part of FOSS club (foss.amrita.ac.in) at Amrita and mentor students to contribute to open source projects. I have been part of Google Summer of Code 2012 where I contributed to e-\u00adcidadania an e\u00ad-democratic web application which is written in Python-Django.",
@@ -72,7 +76,8 @@
         "time": "11:00:00 AM",
         "date": "5/29/2015",
         "type": "talk",
-        "id": "alangot_0"
+        "id": "alangot_0",
+        "duration_2": "0:40:00"
     },
     {
         "bio": "Christine Doig is a Data Scientist at Continuum Analytics. She holds a M.S. in Industrial Engineering from UPC, Barcelona, where she also started a Masters in Innovation and Research in Informatics, Data Mining and BI, before joining Continuum Analytics.<br><br> She is interested in Data Science and Python and loves to share her knowledge with others. She has taught tutorials and presented talks on conda, Blaze, Bokeh, scikit-learn and Data Science at PyCon, PyTexas, PyCon Spain, PyData Dallas, ScipyConf and local meetup groups like PyBCN, PyladiesBCN, APUG and ACM SIGKDD. Blogposts, talks, slides and videos can be found on her site http://chdoig.github.io/.",
@@ -87,7 +92,8 @@
         "time": "10:20:00 AM",
         "date": "5/29/2015",
         "type": "talk",
-        "id": "doig_0"
+        "id": "doig_0",
+        "duration_2": "2:10:00"
     },
     {
         "bio": "Claas works as a research fellow at the Vienna University of Technology, where he develops simulation software for the investigation of magnetic processes at the nanoscale. He received his PhD in physics at the University of Hamburg and discovered his interest in modern scripting languages while working as a web developer for different companies.",
@@ -102,7 +108,8 @@
         "time": "11:40:00 AM",
         "date": "5/29/2015",
         "type": "talk",
-        "id": "abert_0"
+        "id": "abert_0",
+        "duration_2": "0:40:00"
     },
     {
         "bio": "",
@@ -117,7 +124,8 @@
         "time": "1:30:00 PM",
         "date": "5/29/2015",
         "type": "talk",
-        "id": "mueller_0"
+        "id": "mueller_0",
+        "duration_2": "3:00:00"
     },
     {
         "bio": "Tobias is a physicist and works at Trademob GmbH as a Data Analyst.",
@@ -132,7 +140,8 @@
         "time": "1:30:00 PM",
         "date": "5/29/2015",
         "type": "talk",
-        "id": "kuhn_0"
+        "id": "kuhn_0",
+        "duration_2": "0:40:00"
     },
     {
         "bio": "Selvaraj works at Trademob GmbH as a Software Engineer in R&D. His work focuses on Data Engineering and Monitoring.",
@@ -147,7 +156,8 @@
         "time": "1:30:00 PM",
         "date": "5/29/2015",
         "type": "talk",
-        "id": "selvaraj_0"
+        "id": "selvaraj_0",
+        "duration_2": "0:40:00"
     },
     {
         "bio": "Paul Balzer is Data Analyst/CEO at MechLab Engineering and Open Data activist in Dresden.",
@@ -162,7 +172,8 @@
         "time": "2:10:00 PM",
         "date": "5/29/2015",
         "type": "talk",
-        "id": "balzer_0"
+        "id": "balzer_0",
+        "duration_2": "0:40:00"
     },
     {
         "bio": "Alexander Kagoshima became the first member of Pivotal's EMEA Data Science Team after receiving a MSc (Dipl.-Ing.) in Business and Software Engineering from TU Berlin. While working towards his degree, he already started applying his focus area of Machine Learning to real-world problems. He used techniques from this field to analyze and predict malfunctions in a test fleet of fuel-cell cars from Volkswagen as well as optimizing wind-turbine control systems in a research project at Siemens. As Data Scientist at Pivotal he mainly develops large-scale Machine Learning systems for customers of Pivotal's Big Data Suite across different industries and use-cases, with a special focus on network security, fraud detection and Internet-of-Things. In his spare time, he searches for new ways to analyze soccer with statistical methods and likes to see the German soccer team winning.",
@@ -177,7 +188,8 @@
         "time": "3:10:00 PM",
         "date": "5/29/2015",
         "type": "talk",
-        "id": "kagoshima_0"
+        "id": "kagoshima_0",
+        "duration_2": "0:40:00"
     },
     {
         "bio": "Ronert got his MSc in Statistics at Ludwig-Maximilians-Universit\u00e4t in Munich and now works as a Data Scientist at Pivotal (http://www.pivotal.io ) in Berlin. His focus is on applying algorithms from machine learning and statistics to large data sets.",
@@ -192,7 +204,8 @@
         "time": "3:50:00 PM",
         "date": "5/29/2015",
         "type": "talk",
-        "id": "obst_0"
+        "id": "obst_0",
+        "duration_2": "0:40:00"
     },
     {
         "bio": "Sylvain Bellemare is a software engineer, and currently works mainly with Django and Postgres. He is himself new to Docker and scientific Python. He has experience managing development environments with Vagrant, SaltStack, and VirtualBox, at work, and for fun, such as in https://github.com/sciboxes/scipybox.",
@@ -207,7 +220,8 @@
         "time": "10:20:00 AM",
         "date": "5/30/2015",
         "type": "talk",
-        "id": "bellemare_0"
+        "id": "bellemare_0",
+        "duration_2": "1:30:00"
     },
     {
         "bio": "Jose Luis Lopez Pino is part of the Data Science team of GetYourGuide. Before that, he worked as Business Intelligence consultant and joined the Information Technology For Business Intelligence high quality education program. His new venture is Smergy, an initiative project to revolutionize energy efficiency using big data supported by the European Institute of Innovation and Technology.",
@@ -222,7 +236,8 @@
         "time": "10:20:00 AM",
         "date": "5/30/2015",
         "type": "talk",
-        "id": "pino_0"
+        "id": "pino_0",
+        "duration_2": "0:40:00"
     },
     {
         "bio": "Lea has studied economics, politics and sociology and has worked several years in finance and operations until she realized that people are much more interesting than numbers. Consequently she switched to people management in 2012 and became an expert for topics such as internal communication, motivation, team building and development and employer branding. She holds a degree in coaching and mediation, is the MD of BLS Venture Capital and Minister of Culture at empaua.",
@@ -237,7 +252,8 @@
         "time": "11:10:00 AM",
         "date": "5/30/2015",
         "type": "talk",
-        "id": "boehm_0"
+        "id": "boehm_0",
+        "duration_2": "0:40:00"
     },
     {
         "bio": "Thomas Pfaff recieved his Diploma degree in Environmental Engineering in 2004 and his PhD from Stuttgart University in 2012 where he had been working on improving precipitation estimates from weather radar data. Therefore, one of his specialties is the processing and analysis of large amounts of environmental sensing data. Since 2014 he is a member of the core data science algorithms team at Blue Yonder GmbH, Karlsruhe",
@@ -252,7 +268,8 @@
         "time": "2:20:00 PM",
         "date": "5/30/2015",
         "type": "talk",
-        "id": "pfaff_0"
+        "id": "pfaff_0",
+        "duration_2": "1:30:00"
     },
     {
         "bio": "Peadar Coyle is an Energy Analyst at Vodafone Procurement Company in Luxembourg, where he is applying his analytical skills helping his colleagues better understand their data and their market.  Peadar is enthusiastic at driving innovation in new products, and developing novel applications of artificial intelligence. He has full-stack development experience, including design, building, and shipping of data, machine learning, and visualisation intensive products and solutions.  He regularly contributes to the Data Science community in Luxembourg by speaking at the local meetup. His open source contributions include Probabilistic Programming and Bayesian Methods for Hackers and some small contributions to Pandas. Peadar is a regular speaker throughout Europe on Data Analysis and contributes to the Python Community. This includes speaking at PyCon in Florence. Peadar has a Masters in Mathematics from the University of Luxembourg where he specialized in Statistics and Theoretical Machine Learning.",
@@ -267,7 +284,8 @@
         "time": "2:20:00 PM",
         "date": "5/30/2015",
         "type": "talk",
-        "id": "coyle_0"
+        "id": "coyle_0",
+        "duration_2": "0:40:00"
     },
     {
         "bio": "I'm a Python Developer from Karlsruhe, Germany. I'm working as a Senior Web Developer at Blue Yonder building Predictive Applications.",
@@ -282,7 +300,8 @@
         "time": "3:00:00 PM",
         "date": "5/30/2015",
         "type": "talk",
-        "id": "hoffmann_0"
+        "id": "hoffmann_0",
+        "duration_2": "0:40:00"
     },
     {
         "bio": "",
@@ -297,7 +316,8 @@
         "time": "4:10:00 PM",
         "date": "5/30/2015",
         "type": "talk",
-        "id": "pahl_0"
+        "id": "pahl_0",
+        "duration_2": "1:30:00"
     },
     {
         "bio": "Alejandro Correa Bahnsen is currently working towards a Ph.D in Machine Learning at Luxembourg University. His research area relates to cost-sensitive classification and its application in a variety of real-world problems such as fraud detection, credit risk, direct marketing and churn modeling. Also, he works part time a fraud data scientist at CETREL a SIX Company applying his research for detecting fraud. Before starting his PhD, he worked for five years as a data scientist at GE Money and Scotiabank, applying data mining models in a variety of areas from advertisement to financial risk management. He have written and published many academic and industrial papers in the best per-review publications. Moreover, Alejandro also have experience as instructor of econometrics, financial risk management and machine learning. He is also a co-organizer of the Data Science Luxembourg meetup.",
@@ -312,7 +332,8 @@
         "time": "4:10:00 PM",
         "date": "5/30/2015",
         "type": "talk",
-        "id": "bahnsen_0"
+        "id": "bahnsen_0",
+        "duration_2": "0:40:00"
     },
     {
         "bio": "A Neuberliner, Miguel works as Data Scientist for TrustYou, juggling with (mostly textual) data. He obtained a M.Sc. degree Informatics from TU in Munich where he also founded and ran the Munich Datageeks, the largest ML/Data Science group in Bavaria. When not using computer Miguel enjoys playing Latin American folk music and doing martial arts.",
@@ -327,7 +348,8 @@
         "time": "4:50:00 PM",
         "date": "5/30/2015",
         "type": "talk",
-        "id": "cabrera_0"
+        "id": "cabrera_0",
+        "duration_2": "0:40:00"
     },
     {
         "bio": "",
@@ -342,7 +364,8 @@
         "time": "5:40:00 PM",
         "date": "5/30/2015",
         "type": "talk",
-        "id": "carter_0"
+        "id": "carter_0",
+        "duration_2": "0:40:00"
     },
     {
         "bio": "Maths and complex systems nerd. I studied physics at Universidad Autonoma de Madrid, and done some research on systems biology in Spain and The Netherlands. Now I am interested in start-ups, new technologies and lean methodologies, still driven by curiosity and motivation. I am passionate about data democratization, data science and big data. I've been import.io Data Scientist for the last 2 years, where I am responsible of the analytics and data modelling for business and growth. I'v also been mentor in the first S2DS (Science to Data Science) course in the UK, a course for PhDs in Science to transition into real life Data Science.",
@@ -357,6 +380,7 @@
         "time": "5:40:00 PM",
         "date": "5/30/2015",
         "type": "talk",
-        "id": "elola_0"
+        "id": "elola_0",
+        "duration_2": "0:40:00"
     }
 ]
