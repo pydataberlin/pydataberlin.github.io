@@ -94,7 +94,7 @@ def events(root):
             for talk in talk_parameters(day, room):
 
                 id_ = "".join([d for d in md5(talk['id']).hexdigest() if d in
-                               list('0123456789')])[:8]
+                               list('123456789')])[:8]
                 if id_ in ids:
                     raise ValueError('duplicate id detected for id: %s' % talk['id'])
                 ids.append(id_)
