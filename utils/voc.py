@@ -85,14 +85,19 @@ def talk_parameters(day, room):
     return talk_parameters
 
 def events(root):
+    ids = []
     for day in days():
         day_item = etree.SubElement(root, 'day', date=day)
         for room in rooms(day):
             room_item = etree.SubElement(day_item, 'room', name=room)
             for talk in talk_parameters(day, room):
 
-                event = etree.SubElement(room_item, 'event', attrib={'id':
-                                                                     talk['id']})
+                id_ = sum(ord(c) for c in talk['id'])
+                if id_ in ids:
+                    raise ValueError('duplicate id detected')
+                ids.append(id)
+                event = etree.SubElement(room_item, 'event',
+                                         attrib={'id': bytes(id_)})
 
                 date = etree.SubElement(event, 'date')
                 date.text = talk['datetime'].isoformat()
