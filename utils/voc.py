@@ -63,6 +63,7 @@ def group_talks():
         t['persons'] = map(lambda e: e['firstname']+u' '+e['name'], values)
         t['type'] = values[0]['type']
         t['abstract'] = values[0]['abstract']
+        t['id'] = values[0]['id']
         talks.append(t)
     return talks
 
@@ -89,7 +90,9 @@ def events(root):
         for room in rooms(day):
             room_item = etree.SubElement(day_item, 'room', name=room)
             for talk in talk_parameters(day, room):
-                event = etree.SubElement(room_item, 'event')
+
+                event = etree.SubElement(room_item, 'event', attrib={'id':
+                                                                     talk['id']})
 
                 date = etree.SubElement(event, 'date')
                 date.text = talk['datetime'].isoformat()
