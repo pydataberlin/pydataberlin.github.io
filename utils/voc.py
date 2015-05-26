@@ -18,7 +18,7 @@ other_events = [
          "time": "4:30:00 PM",
          "date": "5/29/2015",
          "type": "talk",
-         "id": "" },
+         "id": "lightning_0" },
         {"bio": "",
          "twitter": "",
          "organisation": "",
@@ -32,7 +32,7 @@ other_events = [
          "time": "11:50:00 AM",
          "date": "5/30/2015",
          "type": "talk",
-         "id": ""}]
+         "id": "panel_0"}]
 
 raw_talks = None
 with open('../_data/keynotes.json', 'r') as f:
