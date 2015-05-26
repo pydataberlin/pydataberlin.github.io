@@ -3,6 +3,7 @@ import datetime
 import pytz
 from lxml import etree
 import itertools
+from hashlib import md5
 
 other_events = [
         {"bio":"",
@@ -92,10 +93,11 @@ def events(root):
             room_item = etree.SubElement(day_item, 'room', name=room)
             for talk in talk_parameters(day, room):
 
-                id_ = sum(ord(c) for c in talk['id'])
+                id_ = "".join([d for d in md5(talk['id']).hexdigest() if d in
+                               list('0123456789')])[:8]
                 if id_ in ids:
-                    raise ValueError('duplicate id detected')
-                ids.append(id)
+                    raise ValueError('duplicate id detected for id: %s' % talk['id'])
+                ids.append(id_)
                 event = etree.SubElement(room_item, 'event',
                                          attrib={'id': bytes(id_)})
 
