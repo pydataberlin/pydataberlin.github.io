@@ -29,7 +29,7 @@
         <title>Measure, don't Guess - How to find out if and where to optimize</title>
         <type>talk</type>
         <language>en</language>
-        <abstract>Python is a great language. But it can be slow compared to other languages for certain types of tasks. If applied appropriately, optimization may reduce program runtime or memory consumption considerably. But this often comes at a price. Optimization can be time consuming and the optimized program may be more complicated. This, in turn, means more maintenance effort. How do you find out if it is worthwhile to optimize your program? Where should you start? This tutorial will help you to answer these questions. You will learn how to find  an optimization strategy based on quantitative and objective criteria.&lt;br&gt;You will experience that one's gut feeling what to optimize is often wrong.&lt;br&gt;&lt;br&gt;The solution to this problem is: „Measure, Measure, and Measure!“. You will learn how to measure program run times as well as profile CPU and memory.&lt;br&gt;There are great tools available. You will learn how to use some of them. Measuring is not easy because, by definition, as soon as you start to measure, you influence your system. Keeping this impact as small as possible is important. Therefore, we will cover different measuring techniques.&lt;br&gt;&lt;br&gt;Furthermore, we will look at algorithmic improvements. You will see that the right data structure for the job can make a big difference. Finally, you will learn about different caching techniques.</abstract>
+        <abstract>Python is a great language. But it can be slow compared to other languages for certain types of tasks. If applied appropriately, optimization may reduce program runtime or memory consumption considerably. But this often comes at a price. Optimization can be time consuming and the optimized program may be more complicated. This, in turn, means more maintenance effort. How do you find out if it is worthwhile to optimize your program? Where should you start? This tutorial will help you to answer these questions. You will learn how to find  an optimization strategy based on quantitative and objective criteria.&lt;br&gt;You will experience that one's gut feeling what to optimize is often wrong.&lt;br&gt;&lt;br&gt;The solution to this problem is: „Measure, Measure, and Measure!“. You will learn how to measure program run times as well as profile CPU and memory.&lt;br&gt;There are great tools available. You will learn how to use some of them. Measuring is not easy because, by definition, as soon as you start to measure, you influence your system. Keeping this impact as small as possible is important. Therefore, we will cover different measuring techniques.&lt;br&gt;&lt;br&gt;Furthermore, we will look at algorithmic improvements. You will see that the right data structure for the job can make a big difference. Finally, you will learn about different caching techniques.&lt;br&gt;&lt;br&gt;&lt;a href="https://goo.gl/uXKJt0"&gt;Full description of the tutorial.&lt;/a&gt;</abstract>
         <persons>
           <person>Mike Müller</person>
         </persons>
@@ -62,17 +62,17 @@
           <person>Valentin Haenel</person>
         </persons>
       </event>
-      <event id="86669535">
+      <event id="71741916">
         <date>2015-05-29T11:00:00+02:00</date>
         <start>11:00</start>
         <duration>0:40:00</duration>
         <room>Innospace</room>
-        <title>Python Bindings for RAMCloud</title>
+        <title>Running, walking, sitting or biking? - Motion prediction with acceleration and rotationrates</title>
         <type>talk</type>
         <language>en</language>
-        <abstract>RAMCloud is a project which began at Stanford University, it is a storage system cluster where each and every byte of data always reside in DRAM(main memory) and disk take the role of archival or backup. It is developed completely using commodity hardware and can provide an access latency of 5-­10ms. The RAMCloud technology will be very useful to data centric applications where performance is very crucial. I would like to give an overview of RAMCloud, its advantage over other memory based storage system like H-­Store, memcache etc and about the Python binding using which we can work with it.</abstract>
+        <abstract>A lot of devices can measure acceleration and rotationrates. With the right features, Machine Learning can predict, weather you are sitting, running, walking or going by bike. This talk will show you, how to calculate features with Pandas and set up a real time classifier with SciKit-Learn. Including &lt;a href="https://vimeo.com/mechlabengineering/activityclassification"&gt; hardware demo&lt;/a&gt;.</abstract>
         <persons>
-          <person>Bithin Alangot</person>
+          <person>Paul Balzer</person>
         </persons>
       </event>
       <event id="76336834">

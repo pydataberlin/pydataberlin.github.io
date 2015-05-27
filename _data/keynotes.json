@@ -64,20 +64,20 @@
         "id": "haenel_0"
     },
     {
-        "bio": "I am a PhD student at Amrita University, Amritapuri Campus, India. My area of research is in\u00ad-memory storage systems. I have set up RAMCloud cluster in my lab and carried out various experiment over it. I am also part of FOSS club (foss.amrita.ac.in) at Amrita and mentor students to contribute to open source projects. I have been part of Google Summer of Code 2012 where I contributed to e-\u00adcidadania an e\u00ad-democratic web application which is written in Python-Django.",
+        "bio": "Paul Balzer is Data Analyst/CEO at MechLab Engineering and Open Data activist in Dresden.",
         "twitter": "",
-        "organisation": "Amrita University",
-        "name": "Alangot",
-        "firstname": "Bithin",
-        "title": "Python Bindings for RAMCloud",
-        "abstract": "RAMCloud is a project which began at Stanford University, it is a storage system cluster where each and every byte of data always reside in DRAM(main memory) and disk take the role of archival or backup. It is developed completely using commodity hardware and can provide an access latency of 5-\u00ad10ms. The RAMCloud technology will be very useful to data centric applications where performance is very crucial. I would like to give an overview of RAMCloud, its advantage over other memory based storage system like H-\u00adStore, memcache etc and about the Python binding using which we can work with it.",
-        "linkedin": "https://www.linkedin.com/in/bithin2007",
+        "organisation": "MechLab Engineering",
+        "name": "Balzer",
+        "firstname": "Paul",
+        "title": "Running, walking, sitting or biking? - Motion prediction with acceleration and rotationrates",
+        "abstract": "A lot of devices can measure acceleration and rotationrates. With the right features, Machine Learning can predict, weather you are sitting, running, walking or going by bike. This talk will show you, how to calculate features with Pandas and set up a real time classifier with SciKit-Learn. Including <a href=\"https://vimeo.com/mechlabengineering/activityclassification\"> hardware demo</a>.",
+        "linkedin": "",
         "duration": "0:40:00",
         "location": "Innospace",
         "time": "11:00:00 AM",
         "date": "5/29/2015",
         "type": "talk",
-        "id": "alangot_0"
+        "id": "balzer_1"
     },
     {
         "bio": "Christine Doig is a Data Scientist at Continuum Analytics. She holds a M.S. in Industrial Engineering from UPC, Barcelona, where she also started a Masters in Innovation and Research in Informatics, Data Mining and BI, before joining Continuum Analytics.<br><br> She is interested in Data Science and Python and loves to share her knowledge with others. She has taught tutorials and presented talks on conda, Blaze, Bokeh, scikit-learn and Data Science at PyCon, PyTexas, PyCon Spain, PyData Dallas, ScipyConf and local meetup groups like PyBCN, PyladiesBCN, APUG and ACM SIGKDD. Blogposts, talks, slides and videos can be found on her site http://chdoig.github.io/.",
