@@ -278,7 +278,7 @@
         "name": "Coyle",
         "firstname": "Peadar",
         "title": "Probabilistic Programming in Sports Analytics",
-        "abstract": "Probabilistic Programming and Bayesian Methods are called by some a new paradigm. There are numerous interesting applications such as to Quantitative Finance.<br>I'll discuss what probabilistic programming is, why should you care and how to use PyMC and PyMC3 from Python to implement these methods. I'll be applying these methods to studying the problem of 'rugby sports analytics' particularly how to model the winning team in the recent Six Nations in Rugby. I will discuss the framework and how I was able to quickly and easily produce an innovative and powerful model as a non-expert.",
+        "abstract": "Probabilistic Programming and Bayesian Methods are called by some a new paradigm. There are numerous interesting applications such as to Quantitative Finance.<br>I'll discuss what probabilistic programming is, why should you care and how to use PyMC and PyMC3 from Python to implement these methods. I'll be applying these methods to studying the problem of 'rugby sports analytics' particularly how to model the winning team in the recent Six Nations in Rugby. I will discuss the framework and how I was able to quickly and easily produce an innovative and powerful model as a non-expert. Slides at: http://nbviewer.ipython.org/format/slides/github/springcoil/Probabilistic_Programming_and_Rugby/blob/master/Bayesian_Rugby.ipynb#/ ",
         "linkedin": "https://lu.linkedin.com/in/peadarcoyle",
         "duration": "0:40:00",
         "location": "Innospace",
